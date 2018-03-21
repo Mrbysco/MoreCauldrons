@@ -4,11 +4,15 @@ import java.util.Locale;
 
 import com.Mrbysco.MoreCauldrons.MoreCauldrons;
 
+import knightminer.inspirations.library.recipe.cauldron.ICauldronRecipe.CauldronState;
 import net.minecraft.block.BlockCauldron;
 import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyBool;
 import net.minecraft.block.properties.PropertyEnum;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.IStringSerializable;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
 import net.minecraftforge.common.property.ExtendedBlockState;
 import net.minecraftforge.common.property.IUnlistedProperty;
 

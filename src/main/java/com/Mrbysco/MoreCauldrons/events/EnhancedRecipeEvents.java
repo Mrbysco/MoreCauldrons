@@ -21,7 +21,6 @@ import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock;
-import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
@@ -57,14 +56,12 @@ public class EnhancedRecipeEvents {
 			event.setCancellationResult(EnumActionResult.SUCCESS);
 		}
 	}
-	
-	public static final Random rand = new Random();
-	
+		
 	@SubscribeEvent(priority = EventPriority.HIGH)
 	public static void clickCauldron(TickEvent.WorldTickEvent event) {
 		World world = event.world;
+		
 		ArrayList<TileEntity> TileList = new ArrayList<>(world.loadedTileEntityList);
-
 		
 		for (TileEntity tile : TileList)
 		{
@@ -77,27 +74,27 @@ public class EnhancedRecipeEvents {
 				if(cauldron.getContentType() == CauldronContents.FLUID)
 				{
 					CauldronState state = CauldronState.fromNBT(cauldron.serializeNBT().getCompoundTag(cauldron.TAG_STATE));
-					
 					if(block instanceof BlockEnhancedWoodenCauldron)
 					{
-						if(state.getFluid() == FluidRegistry.LAVA || state.getFluid().getTemperature() >= FluidRegistry.LAVA.getTemperature())
-						{
-							int randInt = rand.nextInt(10);
-							System.out.println(randInt);
+						if(state.getFluid().getTemperature() >= 350)
+						{		
+							Random random = world.rand;
+							int randInt = random.nextInt(10);
 
 							if(randInt < 2)
 							{
-								if(world.getBlockState(pos.north()).getMaterial() == Material.AIR && rand.nextInt(100) < 1)
+								if(world.getBlockState(pos.north()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
 									world.setBlockState(pos.north(), Blocks.FIRE.getDefaultState(), 3);
-								if(world.getBlockState(pos.south()).getMaterial() == Material.AIR && rand.nextInt(100) < 1)
+								if(world.getBlockState(pos.south()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
 									world.setBlockState(pos.south(), Blocks.FIRE.getDefaultState(), 3);
-								if(world.getBlockState(pos.west()).getMaterial() == Material.AIR && rand.nextInt(100) < 1)
+								if(world.getBlockState(pos.west()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
 									world.setBlockState(pos.west(), Blocks.FIRE.getDefaultState(), 3);
-								if(world.getBlockState(pos.east()).getMaterial() == Material.AIR && rand.nextInt(100) < 1)
+								if(world.getBlockState(pos.east()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
 									world.setBlockState(pos.east(), Blocks.FIRE.getDefaultState(), 3);
 								
-								if(rand.nextInt(100) < 5)
-									world.setBlockState(pos, state.getFluid().getBlock().getDefaultState(), 3);
+								int rand2 = random.nextInt(100);
+								if(rand2 < 3 && state.getFluid().getBlock() != null)
+									world.setBlockState(pos, state.getFluid().getBlock().getDefaultState(), 6);
 							}
 						}
 					}
