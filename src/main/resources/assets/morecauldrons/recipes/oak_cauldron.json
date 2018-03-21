@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "morecauldrons:oak_cauldron"
+  },
+  "pattern": [
+	"W W",
+    "W W",
+    "WWW"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:planks",
+      "data": 0
+    }
+  }
+}

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "morecauldrons",
+  "name": "More Cauldrons",
+  "description": "Adds more cauldrons to the game.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Mrbysco"],
+  "credits": "EmosewaPixel for the idea",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,24 @@
+# Config
+morecauldrons.config.title=More Cauldrons Config
+
+# Tab
+itemGroup.morecauldrons=More Cauldrons
+
+# Blocks
+tile.morecauldrons:acaciacauldron.name=Acacia Cauldron
+tile.morecauldrons:bigoakcauldron.name=Dark Oak Cauldron
+tile.morecauldrons:birchcauldron.name=Birch Cauldron
+tile.morecauldrons:junglecauldron.name=Jungle Cauldron
+tile.morecauldrons:oakcauldron.name=Oak Cauldron
+tile.morecauldrons:sprucecauldron.name=Spruce Cauldron
+
+tile.morecauldrons:cobblecauldron.name=Cobblestone Cauldron
+
+tile.morecauldrons:stonecauldron.name=Stone Cauldron
+tile.morecauldrons:granitecauldron.name=Granite Cauldron
+tile.morecauldrons:smoothgranitecauldron.name=Polished Granite Cauldron
+tile.morecauldrons:dioritecauldron.name=Diorite Cauldron
+tile.morecauldrons:smoothdioritecauldron.name=Polished Diorite Cauldron
+tile.morecauldrons:andesitecauldron.name=Andesite Cauldron
+tile.morecauldrons:smoothandesitecauldron.name=Polished Andesite Cauldron
+
