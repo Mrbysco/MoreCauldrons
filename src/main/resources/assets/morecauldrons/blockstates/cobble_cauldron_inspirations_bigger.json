@@ -1,0 +1,31 @@
+{
+    "forge_marker": 1,
+	"defaults": {
+		"textures": {
+			"particle": "blocks/cobblestone",
+			"top": "blocks/cobblestone",
+			"bottom": "blocks/cobblestone",
+			"side": "blocks/cobblestone",
+			"inside": "blocks/cobblestone"
+		}
+	},
+	"variants": {
+    "levels": {
+		"0" : { "model": "cauldron_empty" },
+		"1" : { "model": "morecauldrons:cauldron_level0" },
+		"2" : { "model": "morecauldrons:cauldron_level1" },
+		"3" : { "model": "morecauldrons:cauldron_level2" },
+		"4" : { "model": "morecauldrons:cauldron_level3" }
+    },
+    "contents": {
+      "fluid": {},
+      "dye": { "textures": { "water": "inspirations:blocks/fluid_colorless" }},
+      "potion": { "textures": { "water": "inspirations:blocks/fluid_potion" }}
+    },
+    "boiling": {
+      "true": {},
+      "false": {}
+    },
+    "inventory": [{}]
+  }
+}

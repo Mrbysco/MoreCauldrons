@@ -3,6 +3,7 @@ package com.Mrbysco.MoreCauldrons.proxy;
 import com.Mrbysco.MoreCauldrons.MoreCauldrons;
 import com.Mrbysco.MoreCauldrons.blocks.inspirations.ICauldron;
 import com.Mrbysco.MoreCauldrons.init.ModBlocks;
+import com.Mrbysco.MoreCauldrons.init.ModRenders;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.IBakedModel;
@@ -73,13 +74,25 @@ public class ClientProxy extends CommonProxy{
 			if(block == null)
 				return;
 			
-			ResourceLocation Model = block.getRegistryName();
+			String level;
+			int max;
+			
+			ResourceLocation base;
+			if(knightminer.inspirations.common.Config.enableBiggerCauldron) {
+				level = "levels";
+				max = 4;
+				base = ModRenders.getBiggerResource(block.getRegistryName().getResourcePath(), "_inspirations_bigger");
+			} else {
+				level = "level";
+				max = 3;
+				base = ModRenders.getBiggerResource(block.getRegistryName().getResourcePath(), "_inspirations");
+			}
 			
 			boolean boiling = false;
 			do {
 				for(int i = 1; i <= 3; i++) {
-					replaceTexturedModel(event, new ModelResourceLocation(Model, String.format("boiling=%s,contents=fluid,level=%s", boiling, i)), "water", false);
-				}
+					replaceTexturedModel(event, new ModelResourceLocation(base, String.format("boiling=%s,contents=fluid,%s=%s", boiling, level, i)), "water", false);
+					}
 				boiling = !boiling;
 			} while(boiling);
 		}

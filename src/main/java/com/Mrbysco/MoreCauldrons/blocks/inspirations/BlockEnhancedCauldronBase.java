@@ -37,8 +37,15 @@ public class BlockEnhancedCauldronBase extends BlockEnhancedCauldron{
 			
 			if(cauldron.getContentType() != CauldronContents.DYE)
 			{
-				if(getWaterLevel(state) == 3 && cState.getFluid().getBlock() != null)
-					worldIn.setBlockState(pos, cState.getFluid().getBlock().getDefaultState(), 6);
+				if(knightminer.inspirations.common.Config.enableBiggerCauldron) {
+					if(getWaterLevel(state) == 4 && cState.getFluid().getBlock() != null)
+						worldIn.setBlockState(pos, cState.getFluid().getBlock().getDefaultState(), 6);
+				}
+				else
+				{
+					if(getWaterLevel(state) == 3 && cState.getFluid().getBlock() != null)
+						worldIn.setBlockState(pos, cState.getFluid().getBlock().getDefaultState(), 6);
+				}
 			}
 		}
 		super.breakBlock(worldIn, pos, state);

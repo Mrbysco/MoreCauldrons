@@ -1,0 +1,32 @@
+{
+	"__comment": "Contents and Boiling are only used when Inspirations support is active",
+    "forge_marker": 1,
+	"defaults": {
+		"textures": {
+			"particle": "blocks/planks_oak",
+			"top": "blocks/planks_oak",
+			"bottom": "blocks/planks_oak",
+			"side": "blocks/planks_oak",
+			"inside": "blocks/planks_oak"
+		}
+	},
+	"variants": {
+    "levels": {
+		"0" : { "model": "cauldron_empty" },
+		"1" : { "model": "morecauldrons:cauldron_level0" },
+		"2" : { "model": "morecauldrons:cauldron_level1" },
+		"3" : { "model": "morecauldrons:cauldron_level2" },
+		"4" : { "model": "morecauldrons:cauldron_level3" }
+    },
+    "contents": {
+      "fluid": {},
+      "dye": { "textures": { "water": "inspirations:blocks/fluid_colorless" }},
+      "potion": { "textures": { "water": "inspirations:blocks/fluid_potion" }}
+    },
+    "boiling": {
+      "true": {},
+      "false": {}
+    },
+    "inventory": [{}]
+  }
+}
