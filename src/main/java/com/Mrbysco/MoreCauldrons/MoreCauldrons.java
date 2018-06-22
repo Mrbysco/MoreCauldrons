@@ -2,6 +2,7 @@ package com.Mrbysco.MoreCauldrons;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.Mrbysco.MoreCauldrons.config.MoreCauldronsConfigGen;
 import com.Mrbysco.MoreCauldrons.events.EnhancedRecipeEvents;
 import com.Mrbysco.MoreCauldrons.init.CauldronTab;
 import com.Mrbysco.MoreCauldrons.proxy.CommonProxy;
@@ -40,8 +41,8 @@ public class MoreCauldrons {
 	{
 		inspirationsLoaded = Loader.isModLoaded("inspirations");
 		
-		//logger.debug("Registering config");
-		//MinecraftForge.EVENT_BUS.register(new MoreCauldronsConfigGen());
+		logger.info("Registering config");
+		MinecraftForge.EVENT_BUS.register(new MoreCauldronsConfigGen());
 
 		proxy.Preinit();
 	}
@@ -51,7 +52,7 @@ public class MoreCauldrons {
 	{
 		if(inspirationsLoaded)
 		{
-			logger.debug("Registering event handlers");
+			logger.info("Registering event handlers");
 			MinecraftForge.EVENT_BUS.register(EnhancedRecipeEvents.class);
 		}
 		

@@ -38,7 +38,6 @@ public class ModBlocks {
 	public static Block andesite_cauldron;
 	public static Block smooth_andesite_cauldron;
 	
-	
 	public static ArrayList<Block> BLOCKS = new ArrayList<>();
 	 
 	@SubscribeEvent
