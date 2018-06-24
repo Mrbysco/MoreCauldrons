@@ -22,3 +22,6 @@ tile.morecauldrons:smoothdioritecauldron.name=Polished Diorite Cauldron
 tile.morecauldrons:andesitecauldron.name=Andesite Cauldron
 tile.morecauldrons:smoothandesitecauldron.name=Polished Andesite Cauldron
 
+#Death Messages
+death.attack.boiled=%1$s was boiled alive
+death.attack.boiled.player=%1$s boiled alive trying to escape %2$s

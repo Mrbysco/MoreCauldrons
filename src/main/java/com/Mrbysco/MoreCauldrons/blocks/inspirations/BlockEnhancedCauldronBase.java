@@ -54,7 +54,9 @@ public class BlockEnhancedCauldronBase extends BlockEnhancedCauldron{
 		}
 		super.breakBlock(worldIn, pos, state);
 	}
-
+	
+    public static final DamageSource BOILED = (new DamageSource("boiled")).setFireDamage();
+    
 	@Override
 	public void onEntityCollidedWithBlock(World worldIn, BlockPos pos, IBlockState state, Entity entity) {
 		TileEntity te = worldIn.getTileEntity(pos);
@@ -74,7 +76,7 @@ public class BlockEnhancedCauldronBase extends BlockEnhancedCauldron{
 				
 				if(worldIn.getBlockState(pos.down()).getBlock() == Blocks.FIRE)
 				{
-					entity.attackEntityFrom(DamageSource.LAVA, 1.0F);
+					entity.attackEntityFrom(BOILED, 2.0F);
 				}
 			}
 		}
