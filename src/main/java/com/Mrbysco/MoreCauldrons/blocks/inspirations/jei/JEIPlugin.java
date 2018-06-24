@@ -7,14 +7,9 @@ import com.Mrbysco.MoreCauldrons.init.ModBlocks;
 
 import knightminer.inspirations.common.Config;
 import knightminer.inspirations.common.PulseBase;
-import knightminer.inspirations.library.recipe.TextureRecipe;
 import knightminer.inspirations.plugins.jei.cauldron.CauldronRecipeCategory;
-import knightminer.inspirations.plugins.jei.texture.TextureRecipeHandler;
-import mezz.jei.api.IGuiHelper;
-import mezz.jei.api.IJeiHelpers;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.IModRegistry;
-import mezz.jei.api.recipe.VanillaRecipeCategoryUid;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Loader;
