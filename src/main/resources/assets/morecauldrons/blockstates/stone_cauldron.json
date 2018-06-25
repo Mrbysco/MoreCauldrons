@@ -1,5 +1,4 @@
 {
-	"__comment": "Contents and Boiling are only used when Inspirations support is active",
     "forge_marker": 1,
 	"defaults": {
 		"textures": {

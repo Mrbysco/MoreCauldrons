@@ -1,0 +1,18 @@
+{
+	"forge_marker": 1,
+  	"defaults": {
+		"textures": {
+			"particle": "blocks/planks_acacia",
+			"top": "blocks/planks_acacia",
+			"bottom": "blocks/planks_acacia",
+			"side": "blocks/planks_acacia",
+			"inside": "blocks/planks_acacia"
+		}
+	},
+	"variants": {
+	"inventory": {
+		"model": "cauldron_empty",
+		"transform": "forge:default-block"
+		}
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"forge_marker": 1,
+  	"defaults": {
+		"textures": {
+			"particle": "blocks/stone_andesite",
+			"top": "blocks/stone_andesite",
+			"bottom": "blocks/stone_andesite",
+			"side": "blocks/stone_andesite",
+			"inside": "blocks/stone_andesite"
+		}
+	},
+	"variants": {
+	"inventory": {
+		"model": "cauldron_empty",
+		"transform": "forge:default-block"
+		}
+	}
+}

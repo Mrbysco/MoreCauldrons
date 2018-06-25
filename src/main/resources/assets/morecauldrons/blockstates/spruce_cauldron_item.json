@@ -1,0 +1,18 @@
+{
+	"forge_marker": 1,
+  	"defaults": {
+		"textures": {
+			"particle": "blocks/planks_spruce",
+			"top": "blocks/planks_spruce",
+			"bottom": "blocks/planks_spruce",
+			"side": "blocks/planks_spruce",
+			"inside": "blocks/planks_spruce"
+		}
+	},
+	"variants": {
+	"inventory": {
+		"model": "cauldron_empty",
+		"transform": "forge:default-block"
+		}
+	}
+}

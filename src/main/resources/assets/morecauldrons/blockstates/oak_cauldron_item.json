@@ -1,0 +1,18 @@
+{
+	"forge_marker": 1,
+  	"defaults": {
+		"textures": {
+			"particle": "blocks/planks_oak",
+			"top": "blocks/planks_oak",
+			"bottom": "blocks/planks_oak",
+			"side": "blocks/planks_oak",
+			"inside": "blocks/planks_oak"
+		}
+	},
+	"variants": {
+	"inventory": {
+		"model": "cauldron_empty",
+		"transform": "forge:default-block"
+		}
+	}
+}

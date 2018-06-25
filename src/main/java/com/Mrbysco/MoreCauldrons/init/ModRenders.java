@@ -22,7 +22,14 @@ public class ModRenders {
     {
 		for(Item item : ModItems.ITEMS)
         {
-			ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
+			if(MoreCauldrons.inspirationsLoaded)
+        	{
+				InspirationsBetterItem(event, item);
+        	}
+			else
+			{
+				ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
+			}
         }
 		
         for(Block block : ModBlocks.BLOCKS)
@@ -49,6 +56,19 @@ public class ModRenders {
 		else 
 		{
 			ModelLoader.setCustomStateMapper(block, new knightminer.inspirations.library.client.NameStateMapper(getBiggerResource(block.getRegistryName().getResourcePath(), "_inspirations")));
+		}
+	}
+	
+	@Optional.Method(modid = "inspirations")
+	public static void InspirationsBetterItem(ModelRegistryEvent event, Item item)
+	{
+		if(knightminer.inspirations.common.Config.betterCauldronItem) {
+			System.out.println(item.getRegistryName().getResourceDomain() + " " + item.getRegistryName().getResourcePath());
+			ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(getBiggerResource(item.getRegistryName().getResourcePath(), "_item"), "inventory"));
+		}
+		else
+		{
+			ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 		}
 	}
 	
