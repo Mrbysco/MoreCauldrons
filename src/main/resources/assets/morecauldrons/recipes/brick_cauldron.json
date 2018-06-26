@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "morecauldrons:brick_cauldron"
+  },
+  "pattern": [
+	"B B",
+    "B B",
+    "BBB"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "#ingotBrick"
+    }
+  }
+}

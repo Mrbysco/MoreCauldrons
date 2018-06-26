@@ -3,15 +3,12 @@
   	"defaults": {
 		"textures": {
 			"particle": "blocks/planks_big_oak",
-			"top": "blocks/planks_big_oak",
-			"bottom": "blocks/planks_big_oak",
-			"side": "blocks/planks_big_oak",
-			"inside": "blocks/planks_big_oak"
+			"base": "blocks/planks_big_oak"
 		}
 	},
 	"variants": {
 	"inventory": {
-		"model": "cauldron_empty",
+		"model": "morecauldrons:cauldron_empty",
 		"transform": "forge:default-block"
 		}
 	}

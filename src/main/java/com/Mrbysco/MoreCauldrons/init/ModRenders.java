@@ -63,7 +63,6 @@ public class ModRenders {
 	public static void InspirationsBetterItem(ModelRegistryEvent event, Item item)
 	{
 		if(knightminer.inspirations.common.Config.betterCauldronItem) {
-			System.out.println(item.getRegistryName().getResourceDomain() + " " + item.getRegistryName().getResourcePath());
 			ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(getBiggerResource(item.getRegistryName().getResourcePath(), "_item"), "inventory"));
 		}
 		else

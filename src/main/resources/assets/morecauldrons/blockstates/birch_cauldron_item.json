@@ -3,15 +3,12 @@
   	"defaults": {
 		"textures": {
 			"particle": "blocks/planks_birch",
-			"top": "blocks/planks_birch",
-			"bottom": "blocks/planks_birch",
-			"side": "blocks/planks_birch",
-			"inside": "blocks/planks_birch"
+			"base": "blocks/planks_birch"
 		}
 	},
 	"variants": {
 	"inventory": {
-		"model": "cauldron_empty",
+		"model": "morecauldrons:cauldron_empty",
 		"transform": "forge:default-block"
 		}
 	}

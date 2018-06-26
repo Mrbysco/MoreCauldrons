@@ -3,15 +3,12 @@
   	"defaults": {
 		"textures": {
 			"particle": "blocks/stone_diorite_smooth",
-			"top": "blocks/stone_diorite_smooth",
-			"bottom": "blocks/stone_diorite_smooth",
-			"side": "blocks/stone_diorite_smooth",
-			"inside": "blocks/stone_diorite_smooth"
+			"base": "blocks/stone_diorite_smooth"
 		}
 	},
 	"variants": {
 	"inventory": {
-		"model": "cauldron_empty",
+		"model": "morecauldrons:cauldron_empty",
 		"transform": "forge:default-block"
 		}
 	}

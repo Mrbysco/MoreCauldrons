@@ -1,0 +1,21 @@
+{
+    "forge_marker": 1,
+	"variants": {
+    "level": {
+		"0" : { "model": "morecauldrons:glass_cauldron_empty" },
+		"1" : { "model": "morecauldrons:glass_cauldron_level1" },
+		"2" : { "model": "morecauldrons:glass_cauldron_level2" },
+		"3" : { "model": "morecauldrons:glass_cauldron_level3" }
+    },
+    "contents": {
+      "fluid": {},
+      "dye": { "textures": { "water": "inspirations:blocks/fluid_colorless" }},
+      "potion": { "textures": { "water": "inspirations:blocks/fluid_potion" }}
+    },
+    "boiling": {
+      "true": {},
+      "false": {}
+    },
+    "inventory": [{}]
+  }
+}

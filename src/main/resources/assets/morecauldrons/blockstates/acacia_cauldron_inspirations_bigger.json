@@ -4,15 +4,12 @@
 	"defaults": {
 		"textures": {
 			"particle": "blocks/planks_acacia",
-			"top": "blocks/planks_acacia",
-			"bottom": "blocks/planks_acacia",
-			"side": "blocks/planks_acacia",
-			"inside": "blocks/planks_acacia"
+			"base": "blocks/planks_acacia"
 		}
 	},
 	"variants": {
     "levels": {
-		"0" : { "model": "cauldron_empty" },
+		"0" : { "model": "morecauldrons:cauldron_empty" },
 		"1" : { "model": "morecauldrons:cauldron_level0" },
 		"2" : { "model": "morecauldrons:cauldron_level1" },
 		"3" : { "model": "morecauldrons:cauldron_level2" },

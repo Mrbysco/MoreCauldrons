@@ -1,0 +1,15 @@
+{
+	"forge_marker": 1,
+  	"defaults": {
+		"textures": {
+			"particle": "blocks/brick",
+			"base": "blocks/brick"
+		}
+	},
+	"variants": {
+	"inventory": {
+		"model": "morecauldrons:cauldron_empty",
+		"transform": "forge:default-block"
+		}
+	}
+}

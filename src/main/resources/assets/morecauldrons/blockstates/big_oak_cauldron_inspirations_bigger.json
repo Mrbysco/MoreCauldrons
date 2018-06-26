@@ -4,15 +4,12 @@
 	"defaults": {
 		"textures": {
 			"particle": "blocks/planks_big_oak",
-			"top": "blocks/planks_big_oak",
-			"bottom": "blocks/planks_big_oak",
-			"side": "blocks/planks_big_oak",
-			"inside": "blocks/planks_big_oak"
+			"base": "blocks/planks_big_oak"
 		}
 	},
 	"variants": {
     "levels": {
-		"0" : { "model": "cauldron_empty" },
+		"0" : { "model": "morecauldrons:cauldron_empty" },
 		"1" : { "model": "morecauldrons:cauldron_level0" },
 		"2" : { "model": "morecauldrons:cauldron_level1" },
 		"3" : { "model": "morecauldrons:cauldron_level2" },

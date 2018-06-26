@@ -9,6 +9,7 @@ import knightminer.inspirations.recipes.tileentity.TileCauldron;
 import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.item.EntityItem;
 import net.minecraft.init.Blocks;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.DamageSource;
@@ -76,10 +77,16 @@ public class BlockEnhancedCauldronBase extends BlockEnhancedCauldron{
 				
 				if(worldIn.getBlockState(pos.down()).getBlock() == Blocks.FIRE)
 				{
-					entity.attackEntityFrom(BOILED, 2.0F);
+					if(!(entity instanceof EntityItem))
+						entity.attackEntityFrom(BOILED, 2.0F);
 				}
 			}
 		}
 		super.onEntityCollidedWithBlock(worldIn, pos, state, entity);
 	}
+	
+    /*@Override
+    public boolean canRenderInLayer(IBlockState state, BlockRenderLayer layer) {
+    	 return layer == BlockRenderLayer.SOLID || layer == BlockRenderLayer.TRANSLUCENT;
+    }*/
 }

@@ -90,8 +90,8 @@ public class ClientProxy extends CommonProxy{
 			
 			boolean boiling = false;
 			do {
-				for(int i = 1; i <= 3; i++) {
-					replaceTexturedModel(event, new ModelResourceLocation(base, String.format("boiling=%s,contents=fluid,%s=%s", boiling, level, i)), "water", false);
+				for(int i = 1; i <= max; i++) {
+						replaceTexturedModel(event, new ModelResourceLocation(base, String.format("boiling=%s,contents=fluid,%s=%s", boiling, level, i)), "water", false);
 					}
 				boiling = !boiling;
 			} while(boiling);

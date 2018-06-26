@@ -3,15 +3,12 @@
 	"defaults": {
 		"textures": {
 			"particle": "blocks/stone",
-			"top": "blocks/stone",
-			"bottom": "blocks/stone",
-			"side": "blocks/stone",
-			"inside": "blocks/stone"
+			"base": "blocks/stone"
 		}
 	},
 	"variants": {
     "level": {
-		"0" : { "model": "cauldron_empty" },
+		"0" : { "model": "morecauldrons:cauldron_empty" },
 		"1" : { "model": "morecauldrons:cauldron_level1" },
 		"2" : { "model": "morecauldrons:cauldron_level2" },
 		"3" : { "model": "morecauldrons:cauldron_level3" }

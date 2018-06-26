@@ -3,10 +3,16 @@ package com.Mrbysco.MoreCauldrons.init;
 import java.util.ArrayList;
 
 import com.Mrbysco.MoreCauldrons.MoreCauldrons;
+import com.Mrbysco.MoreCauldrons.blocks.BlockBrickCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.BlockCobbleCauldron;
+import com.Mrbysco.MoreCauldrons.blocks.BlockGlassCauldron;
+import com.Mrbysco.MoreCauldrons.blocks.BlockObsidianCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.BlockStoneCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.BlockWoodenCauldron;
+import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedBrickCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedCobbleCauldron;
+import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedGlassCauldron;
+import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedObsidianCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedStoneCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedWoodenCauldron;
 
@@ -29,6 +35,9 @@ public class ModBlocks {
 	public static Block spruce_cauldron;
 	
 	public static Block cobble_cauldron;
+	public static Block brick_cauldron;
+	public static Block obsidian_cauldron;
+	public static Block glass_cauldron;
 	
 	public static Block stone_cauldron;
 	public static Block granite_cauldron;
@@ -59,6 +68,9 @@ public class ModBlocks {
 	    	spruce_cauldron = registerBlock(new BlockWoodenCauldron("spruce_cauldron", MapColor.OBSIDIAN));
 	    	
 		    cobble_cauldron = registerBlock(new BlockCobbleCauldron("cobble_cauldron"));
+		    glass_cauldron = registerBlock(new BlockGlassCauldron("glass_cauldron"));
+		    obsidian_cauldron = registerBlock(new BlockObsidianCauldron("obsidian_cauldron"));
+		    brick_cauldron = registerBlock(new BlockBrickCauldron("brick_cauldron"));
 		    
 		    stone_cauldron = registerBlock(new BlockStoneCauldron("stone_cauldron", MapColor.STONE));
 		    granite_cauldron = registerBlock(new BlockStoneCauldron("granite_cauldron", MapColor.DIRT));
@@ -85,7 +97,10 @@ public class ModBlocks {
 	    	spruce_cauldron = registerBlock(new BlockEnhancedWoodenCauldron("spruce_cauldron", MapColor.OBSIDIAN));
 	    	
 		    cobble_cauldron = registerBlock(new BlockEnhancedCobbleCauldron("cobble_cauldron"));
-		    
+		    glass_cauldron = registerBlock(new BlockEnhancedGlassCauldron("glass_cauldron"));
+		    obsidian_cauldron = registerBlock(new BlockEnhancedObsidianCauldron("obsidian_cauldron"));
+		    brick_cauldron = registerBlock(new BlockEnhancedBrickCauldron("brick_cauldron"));
+
 		    stone_cauldron = registerBlock(new BlockEnhancedStoneCauldron("stone_cauldron", MapColor.STONE));
 		    granite_cauldron = registerBlock(new BlockEnhancedStoneCauldron("granite_cauldron", MapColor.DIRT));
 		    smooth_granite_cauldron = registerBlock(new BlockEnhancedStoneCauldron("smooth_granite_cauldron", MapColor.DIRT));

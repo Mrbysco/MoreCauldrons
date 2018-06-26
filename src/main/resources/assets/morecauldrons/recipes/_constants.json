@@ -54,5 +54,26 @@
 		  "ore": "stoneAndesitePolished"
 		},
 		"name": "stoneAndesitePolished"
+	},
+	{
+		"ingredient": {
+		  "type": "forge:ore_dict",
+		  "ore": "blockGlass"
+		},
+		"name": "blockGlass"
+	},
+	{
+		"ingredient": {
+		  "type": "forge:ore_dict",
+		  "ore": "obsidian"
+		},
+		"name": "obsidian"
+	},
+	{
+		"ingredient": {
+		  "type": "forge:ore_dict",
+		  "ore": "ingotBrick"
+		},
+		"name": "ingotBrick"
 	}
 ]

@@ -4,15 +4,12 @@
 	"defaults": {
 		"textures": {
 			"particle": "blocks/stone_andesite",
-			"top": "blocks/stone_andesite",
-			"bottom": "blocks/stone_andesite",
-			"side": "blocks/stone_andesite",
-			"inside": "blocks/stone_andesite"
+			"base": "blocks/stone_andesite"
 		}
 	},
 	"variants": {
     "level": {
-		"0" : { "model": "cauldron_empty" },
+		"0" : { "model": "morecauldrons:cauldron_empty" },
 		"1" : { "model": "morecauldrons:cauldron_level1" },
 		"2" : { "model": "morecauldrons:cauldron_level2" },
 		"3" : { "model": "morecauldrons:cauldron_level3" }

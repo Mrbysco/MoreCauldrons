@@ -1,0 +1,9 @@
+{
+	"forge_marker": 1,
+	"variants": {
+	"inventory": {
+		"model": "morecauldrons:glass_cauldron_empty",
+		"transform": "forge:default-block"
+		}
+	}
+}

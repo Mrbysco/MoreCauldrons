@@ -13,6 +13,9 @@ tile.morecauldrons:oakcauldron.name=Oak Cauldron
 tile.morecauldrons:sprucecauldron.name=Spruce Cauldron
 
 tile.morecauldrons:cobblecauldron.name=Cobblestone Cauldron
+tile.morecauldrons:glasscauldron.name=Glass Cauldron
+tile.morecauldrons:obsidiancauldron.name=Obsidian Cauldron
+tile.morecauldrons:brickcauldron.name=Brick Cauldron
 
 tile.morecauldrons:stonecauldron.name=Stone Cauldron
 tile.morecauldrons:granitecauldron.name=Granite Cauldron

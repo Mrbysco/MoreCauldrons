@@ -4,15 +4,12 @@
 	"defaults": {
 		"textures": {
 			"particle": "blocks/planks_birch",
-			"top": "blocks/planks_birch",
-			"bottom": "blocks/planks_birch",
-			"side": "blocks/planks_birch",
-			"inside": "blocks/planks_birch"
+			"base": "blocks/planks_birch"
 		}
 	},
 	"variants": {
     "level": {
-		"0" : { "model": "cauldron_empty" },
+		"0" : { "model": "morecauldrons:cauldron_empty" },
 		"1" : { "model": "morecauldrons:cauldron_level1" },
 		"2" : { "model": "morecauldrons:cauldron_level2" },
 		"3" : { "model": "morecauldrons:cauldron_level3" }

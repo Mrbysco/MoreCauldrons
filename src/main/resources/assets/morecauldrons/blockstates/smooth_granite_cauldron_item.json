@@ -3,15 +3,12 @@
   	"defaults": {
 		"textures": {
 			"particle": "blocks/stone_granite_smooth",
-			"top": "blocks/stone_granite_smooth",
-			"bottom": "blocks/stone_granite_smooth",
-			"side": "blocks/stone_granite_smooth",
-			"inside": "blocks/stone_granite_smooth"
+			"base": "blocks/stone_granite_smooth"
 		}
 	},
 	"variants": {
 	"inventory": {
-		"model": "cauldron_empty",
+		"model": "morecauldrons:cauldron_empty",
 		"transform": "forge:default-block"
 		}
 	}

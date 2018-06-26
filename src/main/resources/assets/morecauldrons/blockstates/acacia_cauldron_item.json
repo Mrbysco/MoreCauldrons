@@ -3,15 +3,12 @@
   	"defaults": {
 		"textures": {
 			"particle": "blocks/planks_acacia",
-			"top": "blocks/planks_acacia",
-			"bottom": "blocks/planks_acacia",
-			"side": "blocks/planks_acacia",
-			"inside": "blocks/planks_acacia"
+			"base": "blocks/planks_acacia"
 		}
 	},
 	"variants": {
 	"inventory": {
-		"model": "cauldron_empty",
+		"model": "morecauldrons:cauldron_empty",
 		"transform": "forge:default-block"
 		}
 	}

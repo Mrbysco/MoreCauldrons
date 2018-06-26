@@ -4,15 +4,12 @@
 	"defaults": {
 		"textures": {
 			"particle": "blocks/stone_granite",
-			"top": "blocks/stone_granite",
-			"bottom": "blocks/stone_granite",
-			"side": "blocks/stone_granite",
-			"inside": "blocks/stone_granite"
+			"base": "blocks/stone_granite"
 		}
 	},
 	"variants": {
     "levels": {
-		"0" : { "model": "cauldron_empty" },
+		"0" : { "model": "morecauldrons:cauldron_empty" },
 		"1" : { "model": "morecauldrons:cauldron_level0" },
 		"2" : { "model": "morecauldrons:cauldron_level1" },
 		"3" : { "model": "morecauldrons:cauldron_level2" },
