@@ -8,7 +8,8 @@
 	},
 	"variants": {
     "level": {
-		"0" : { "model": "morecauldrons:cauldron_empty"},
+		"empty": { "model": "morecauldrons:cauldron_empty" },
+		"0" : { "model": "morecauldrons:cauldron_level0" },
 		"1" : { "model": "morecauldrons:cauldron_level1" },
 		"2" : { "model": "morecauldrons:cauldron_level2" },
 		"3" : { "model": "morecauldrons:cauldron_level3" }

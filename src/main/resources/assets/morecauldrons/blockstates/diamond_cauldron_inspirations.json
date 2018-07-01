@@ -2,17 +2,17 @@
     "forge_marker": 1,
 	"defaults": {
 		"textures": {
-			"particle": "blocks/cobblestone",
-			"base": "blocks/cobblestone"
+			"particle": "blocks/diamond_block",
+			"base": "blocks/diamond_block"
 		}
 	},
 	"variants": {
-    "levels": {
-		"0" : { "model": "morecauldrons:cauldron_empty" },
-		"1" : { "model": "morecauldrons:cauldron_level0" },
-		"2" : { "model": "morecauldrons:cauldron_level1" },
-		"3" : { "model": "morecauldrons:cauldron_level2" },
-		"4" : { "model": "morecauldrons:cauldron_level3" }
+    "level": {
+		"empty": { "model": "morecauldrons:cauldron_empty" },
+		"0" : { "model": "morecauldrons:cauldron_level0" },
+		"1" : { "model": "morecauldrons:cauldron_level1" },
+		"2" : { "model": "morecauldrons:cauldron_level2" },
+		"3" : { "model": "morecauldrons:cauldron_level3" }
     },
     "contents": {
       "fluid": {},

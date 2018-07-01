@@ -15,17 +15,9 @@ public class MoreCauldronsConfigGen {
 	@Config.Comment({"General settings"})
 	public static General general = new General();
 	
-	@Config.Comment({"Inspirations features"})
-	public static Inspirations inspirations = new Inspirations();
-	
 	public static class General{
-		@Config.Comment("When true the cauldron will drop the liquid that's in if it breaks while full. (when possible) [default: false]")
+		@Config.Comment("When true the cauldron will drop the liquid that's in if it breaks while full. (when Inspirations isn't installed) [default: false]")
 		public boolean liquidDropping = false;
-	}
-	
-	public static class Inspirations{
-		@Config.Comment("When true the cauldron will burn the player if inside while there's a hot liquid inside. [default: false]")
-		public boolean burningInside = false;
 	}
 	
 	@Mod.EventBusSubscriber(modid = ModReference.MOD_ID)

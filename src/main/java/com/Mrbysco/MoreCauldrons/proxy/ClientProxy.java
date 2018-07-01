@@ -11,7 +11,6 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.renderer.color.BlockColors;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.client.event.ModelBakeEvent;
 import net.minecraftforge.client.model.IModel;
@@ -74,25 +73,12 @@ public class ClientProxy extends CommonProxy{
 			if(block == null)
 				return;
 			
-			String level;
-			int max;
-			
-			ResourceLocation base;
-			if(knightminer.inspirations.common.Config.enableBiggerCauldron) {
-				level = "levels";
-				max = 4;
-				base = ModRenders.getBiggerResource(block.getRegistryName().getResourcePath(), "_inspirations_bigger");
-			} else {
-				level = "level";
-				max = 3;
-				base = ModRenders.getBiggerResource(block.getRegistryName().getResourcePath(), "_inspirations");
-			}
-			
 			boolean boiling = false;
 			do {
-				for(int i = 1; i <= max; i++) {
-						replaceTexturedModel(event, new ModelResourceLocation(base, String.format("boiling=%s,contents=fluid,%s=%s", boiling, level, i)), "water", false);
-					}
+				replaceTexturedModel(event, new ModelResourceLocation(ModRenders.getBiggerResource(block.getRegistryName().getResourcePath(), "_inspirations"), String.format("boiling=%s,contents=fluid,level=empty", boiling)), "water", false);
+				for(int i = (knightminer.inspirations.common.Config.enableBiggerCauldron ? 0 : 1); i <= 3; i++) {
+					replaceTexturedModel(event, new ModelResourceLocation(ModRenders.getBiggerResource(block.getRegistryName().getResourcePath(), "_inspirations"), String.format("boiling=%s,contents=fluid,level=%s", boiling, i)), "water", false);
+				}
 				boiling = !boiling;
 			} while(boiling);
 		}

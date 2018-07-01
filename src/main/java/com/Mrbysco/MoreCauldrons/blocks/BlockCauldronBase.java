@@ -37,7 +37,7 @@ public class BlockCauldronBase extends BlockCauldron{
 
 	@Override
 	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
-		if(MoreCauldronsConfigGen.general.liquidDropping)
+		if(MoreCauldronsConfigGen.general.liquidDropping && !MoreCauldrons.inspirationsLoaded)
 		{
 			if(getWaterLevel(state) == 3)
 			{

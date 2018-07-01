@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "morecauldrons:brick_cauldron"
+  },
+  "pattern": [
+	"I I",
+    "I I",
+    "III"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "#gemDiamond"
+    }
+  }
+}

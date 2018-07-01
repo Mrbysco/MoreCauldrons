@@ -75,5 +75,19 @@
 		  "ore": "ingotBrick"
 		},
 		"name": "ingotBrick"
+	},
+	{
+		"ingredient": {
+		  "type": "forge:ore_dict",
+		  "ore": "ingotGold"
+		},
+		"name": "ingotGold"
+	},
+	{
+		"ingredient": {
+		  "type": "forge:ore_dict",
+		  "ore": "gemDiamond"
+		},
+		"name": "gemDiamond"
 	}
 ]

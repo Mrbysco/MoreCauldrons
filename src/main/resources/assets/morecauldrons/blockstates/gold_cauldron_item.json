@@ -1,0 +1,15 @@
+{
+	"forge_marker": 1,
+  	"defaults": {
+		"textures": {
+			"particle": "blocks/gold_block",
+			"base": "blocks/gold_block"
+		}
+	},
+	"variants": {
+	"inventory": {
+		"model": "morecauldrons:cauldron_empty",
+		"transform": "forge:default-block"
+		}
+	}
+}

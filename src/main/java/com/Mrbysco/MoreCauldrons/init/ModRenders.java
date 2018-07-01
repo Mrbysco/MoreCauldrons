@@ -4,7 +4,6 @@ import com.Mrbysco.MoreCauldrons.ModReference;
 import com.Mrbysco.MoreCauldrons.MoreCauldrons;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockCauldron;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
@@ -50,13 +49,7 @@ public class ModRenders {
 	@Optional.Method(modid = "inspirations")
 	public static void InspirationsBlockRender(ModelRegistryEvent event, Block block)
 	{
-		if(knightminer.inspirations.common.Config.enableBiggerCauldron) {
-			ModelLoader.setCustomStateMapper(block, new knightminer.inspirations.library.client.NameStateMapper(getBiggerResource(block.getRegistryName().getResourcePath(), "_inspirations_bigger"), BlockCauldron.LEVEL));
-		} 
-		else 
-		{
-			ModelLoader.setCustomStateMapper(block, new knightminer.inspirations.library.client.NameStateMapper(getBiggerResource(block.getRegistryName().getResourcePath(), "_inspirations")));
-		}
+		ModelLoader.setCustomStateMapper(block, new knightminer.inspirations.recipes.RecipesClientProxy.CauldronStateMapper(getBiggerResource(block.getRegistryName().getResourcePath(), "_inspirations")));
 	}
 	
 	@Optional.Method(modid = "inspirations")

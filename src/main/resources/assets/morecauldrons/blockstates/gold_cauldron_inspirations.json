@@ -2,8 +2,8 @@
     "forge_marker": 1,
 	"defaults": {
 		"textures": {
-			"particle": "blocks/obsidian",
-			"base": "blocks/obsidian"
+			"particle": "blocks/gold_block",
+			"base": "blocks/gold_block"
 		}
 	},
 	"variants": {

@@ -5,13 +5,17 @@ import java.util.ArrayList;
 import com.Mrbysco.MoreCauldrons.MoreCauldrons;
 import com.Mrbysco.MoreCauldrons.blocks.BlockBrickCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.BlockCobbleCauldron;
+import com.Mrbysco.MoreCauldrons.blocks.BlockDiamondCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.BlockGlassCauldron;
+import com.Mrbysco.MoreCauldrons.blocks.BlockGoldCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.BlockObsidianCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.BlockStoneCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.BlockWoodenCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedBrickCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedCobbleCauldron;
+import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedDiamondCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedGlassCauldron;
+import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedGoldCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedObsidianCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedStoneCauldron;
 import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedWoodenCauldron;
@@ -34,6 +38,8 @@ public class ModBlocks {
 	public static Block oak_cauldron;
 	public static Block spruce_cauldron;
 	
+	public static Block gold_cauldron;
+	public static Block diamond_cauldron;
 	public static Block cobble_cauldron;
 	public static Block brick_cauldron;
 	public static Block obsidian_cauldron;
@@ -67,6 +73,8 @@ public class ModBlocks {
 	    	oak_cauldron = registerBlock(new BlockWoodenCauldron("oak_cauldron", MapColor.WOOD));
 	    	spruce_cauldron = registerBlock(new BlockWoodenCauldron("spruce_cauldron", MapColor.OBSIDIAN));
 	    	
+	    	gold_cauldron = registerBlock(new BlockGoldCauldron("gold_cauldron"));
+	    	diamond_cauldron = registerBlock(new BlockDiamondCauldron("diamond_cauldron"));
 		    cobble_cauldron = registerBlock(new BlockCobbleCauldron("cobble_cauldron"));
 		    glass_cauldron = registerBlock(new BlockGlassCauldron("glass_cauldron"));
 		    obsidian_cauldron = registerBlock(new BlockObsidianCauldron("obsidian_cauldron"));
@@ -95,7 +103,9 @@ public class ModBlocks {
 	    	jungle_cauldron = registerBlock(new BlockEnhancedWoodenCauldron("jungle_cauldron", MapColor.DIRT));
 	    	oak_cauldron = registerBlock(new BlockEnhancedWoodenCauldron("oak_cauldron", MapColor.WOOD));
 	    	spruce_cauldron = registerBlock(new BlockEnhancedWoodenCauldron("spruce_cauldron", MapColor.OBSIDIAN));
-	    	
+
+	    	gold_cauldron = registerBlock(new BlockEnhancedGoldCauldron("gold_cauldron"));
+	    	diamond_cauldron = registerBlock(new BlockEnhancedDiamondCauldron("diamond_cauldron"));
 		    cobble_cauldron = registerBlock(new BlockEnhancedCobbleCauldron("cobble_cauldron"));
 		    glass_cauldron = registerBlock(new BlockEnhancedGlassCauldron("glass_cauldron"));
 		    obsidian_cauldron = registerBlock(new BlockEnhancedObsidianCauldron("obsidian_cauldron"));
