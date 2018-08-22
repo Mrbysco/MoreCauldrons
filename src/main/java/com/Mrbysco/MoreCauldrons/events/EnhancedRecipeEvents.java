@@ -7,6 +7,7 @@ import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedWoodenCauldron
 import com.Mrbysco.MoreCauldrons.blocks.inspirations.ICauldron;
 
 import knightminer.inspirations.common.Config;
+import knightminer.inspirations.library.InspirationsRegistry;
 import knightminer.inspirations.library.recipe.cauldron.ICauldronRecipe.CauldronState;
 import knightminer.inspirations.recipes.block.BlockEnhancedCauldron.CauldronContents;
 import knightminer.inspirations.recipes.tileentity.TileCauldron;
@@ -42,7 +43,7 @@ public class EnhancedRecipeEvents {
 		World world = event.getWorld();
 		BlockPos pos = event.getPos();
 		IBlockState state = world.getBlockState(pos);
-		if(!(state.getBlock() instanceof ICauldron)) {
+		if(state.getBlock() != Blocks.CAULDRON) {
 			return;
 		}
 		ItemStack stack = event.getItemStack();
@@ -51,14 +52,14 @@ public class EnhancedRecipeEvents {
 		}
 
 		boolean result = TileCauldron.interact(world, pos, state, player, event.getHand());
-		if(result) {
+		if(result && InspirationsRegistry.isCauldronBlacklist(stack)) {
 			event.setCanceled(true);
 			event.setCancellationResult(EnumActionResult.SUCCESS);
 		}
 	}
-		
+	
 	@SubscribeEvent(priority = EventPriority.HIGH)
-	public static void clickCauldron(TickEvent.WorldTickEvent event) {
+	public static void CauldronTickEvent(TickEvent.WorldTickEvent event) {
 		World world = event.world;
 		
 		ArrayList<TileEntity> TileList = new ArrayList<>(world.loadedTileEntityList);
