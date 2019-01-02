@@ -99,8 +99,9 @@ public class EnhancedRecipeEvents {
 								if(MoreCauldronsConfigGen.general.liquidDropping)
 								{
 									int rand2 = random.nextInt(100);
-									if(rand2 < 3 && state.getFluid().getBlock() != null)
-										world.setBlockState(pos, state.getFluid().getBlock().getDefaultState(), 6);
+									Block fluidBlock = state.getFluid().getBlock();
+									if(rand2 < 3 && fluidBlock != null)
+										world.setBlockState(pos, fluidBlock.getDefaultState(), 6);
 								}
 							}
 						}
