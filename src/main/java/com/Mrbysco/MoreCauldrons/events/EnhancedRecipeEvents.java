@@ -3,8 +3,9 @@ package com.Mrbysco.MoreCauldrons.events;
 import java.util.ArrayList;
 import java.util.Random;
 
+import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedCauldronBase;
 import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedWoodenCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.inspirations.ICauldron;
+import com.Mrbysco.MoreCauldrons.config.MoreCauldronsConfigGen;
 
 import knightminer.inspirations.common.Config;
 import knightminer.inspirations.library.InspirationsRegistry;
@@ -43,14 +44,14 @@ public class EnhancedRecipeEvents {
 		World world = event.getWorld();
 		BlockPos pos = event.getPos();
 		IBlockState state = world.getBlockState(pos);
-		if(state.getBlock() != Blocks.CAULDRON) {
+		if(!(state.getBlock() instanceof BlockEnhancedCauldronBase)) {
 			return;
 		}
 		ItemStack stack = event.getItemStack();
 		if(stack.isEmpty()) {
 			return;
 		}
-
+		
 		boolean result = TileCauldron.interact(world, pos, state, player, event.getHand());
 		if(result && InspirationsRegistry.isCauldronBlacklist(stack)) {
 			event.setCanceled(true);
@@ -84,18 +85,23 @@ public class EnhancedRecipeEvents {
 
 							if(randInt < 2)
 							{
-								if(world.getBlockState(pos.north()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
-									world.setBlockState(pos.north(), Blocks.FIRE.getDefaultState(), 3);
-								if(world.getBlockState(pos.south()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
-									world.setBlockState(pos.south(), Blocks.FIRE.getDefaultState(), 3);
-								if(world.getBlockState(pos.west()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
-									world.setBlockState(pos.west(), Blocks.FIRE.getDefaultState(), 3);
-								if(world.getBlockState(pos.east()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
-									world.setBlockState(pos.east(), Blocks.FIRE.getDefaultState(), 3);
-								
-								int rand2 = random.nextInt(100);
-								if(rand2 < 3 && state.getFluid().getBlock() != null)
-									world.setBlockState(pos, state.getFluid().getBlock().getDefaultState(), 6);
+								if(MoreCauldronsConfigGen.general.woodBurning)
+								{
+									if(world.getBlockState(pos.north()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
+										world.setBlockState(pos.north(), Blocks.FIRE.getDefaultState(), 3);
+									if(world.getBlockState(pos.south()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
+										world.setBlockState(pos.south(), Blocks.FIRE.getDefaultState(), 3);
+									if(world.getBlockState(pos.west()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
+										world.setBlockState(pos.west(), Blocks.FIRE.getDefaultState(), 3);
+									if(world.getBlockState(pos.east()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
+										world.setBlockState(pos.east(), Blocks.FIRE.getDefaultState(), 3);
+								}
+								if(MoreCauldronsConfigGen.general.liquidDropping)
+								{
+									int rand2 = random.nextInt(100);
+									if(rand2 < 3 && state.getFluid().getBlock() != null)
+										world.setBlockState(pos, state.getFluid().getBlock().getDefaultState(), 6);
+								}
 							}
 						}
 					}
