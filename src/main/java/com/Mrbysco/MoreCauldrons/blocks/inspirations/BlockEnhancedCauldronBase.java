@@ -1,6 +1,6 @@
-package com.Mrbysco.MoreCauldrons.blocks.inspirations;
+package com.mrbysco.morecauldrons.blocks.inspirations;
 
-import com.Mrbysco.MoreCauldrons.MoreCauldrons;
+import com.mrbysco.morecauldrons.MoreCauldrons;
 
 import knightminer.inspirations.recipes.block.BlockEnhancedCauldron;
 

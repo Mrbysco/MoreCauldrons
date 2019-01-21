@@ -1,7 +1,7 @@
-package com.Mrbysco.MoreCauldrons.blocks;
+package com.mrbysco.morecauldrons.blocks;
 
-import com.Mrbysco.MoreCauldrons.MoreCauldrons;
-import com.Mrbysco.MoreCauldrons.config.MoreCauldronsConfigGen;
+import com.mrbysco.morecauldrons.MoreCauldrons;
+import com.mrbysco.morecauldrons.config.MoreCauldronsConfigGen;
 
 import net.minecraft.block.BlockCauldron;
 import net.minecraft.block.properties.IProperty;

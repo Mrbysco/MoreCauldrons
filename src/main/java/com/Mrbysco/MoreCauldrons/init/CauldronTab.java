@@ -1,6 +1,6 @@
-package com.Mrbysco.MoreCauldrons.init;
+package com.mrbysco.morecauldrons.init;
 
-import com.Mrbysco.MoreCauldrons.ModReference;
+import com.mrbysco.morecauldrons.ModReference;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;

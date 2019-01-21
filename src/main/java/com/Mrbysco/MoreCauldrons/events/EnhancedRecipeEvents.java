@@ -1,11 +1,11 @@
-package com.Mrbysco.MoreCauldrons.events;
+package com.mrbysco.morecauldrons.events;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedCauldronBase;
-import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedWoodenCauldron;
-import com.Mrbysco.MoreCauldrons.config.MoreCauldronsConfigGen;
+import com.mrbysco.morecauldrons.blocks.inspirations.BlockEnhancedCauldronBase;
+import com.mrbysco.morecauldrons.blocks.inspirations.BlockEnhancedWoodenCauldron;
+import com.mrbysco.morecauldrons.config.MoreCauldronsConfigGen;
 
 import knightminer.inspirations.common.Config;
 import knightminer.inspirations.library.InspirationsRegistry;

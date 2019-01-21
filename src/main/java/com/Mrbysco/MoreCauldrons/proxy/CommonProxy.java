@@ -1,4 +1,4 @@
-package com.Mrbysco.MoreCauldrons.proxy;
+package com.mrbysco.morecauldrons.proxy;
 
 public class CommonProxy {
 	

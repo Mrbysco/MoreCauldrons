@@ -1,24 +1,24 @@
-package com.Mrbysco.MoreCauldrons.init;
+package com.mrbysco.morecauldrons.init;
 
 import java.util.ArrayList;
 
-import com.Mrbysco.MoreCauldrons.MoreCauldrons;
-import com.Mrbysco.MoreCauldrons.blocks.BlockBrickCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.BlockCobbleCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.BlockDiamondCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.BlockGlassCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.BlockGoldCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.BlockObsidianCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.BlockStoneCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.BlockWoodenCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedBrickCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedCobbleCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedDiamondCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedGlassCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedGoldCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedObsidianCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedStoneCauldron;
-import com.Mrbysco.MoreCauldrons.blocks.inspirations.BlockEnhancedWoodenCauldron;
+import com.mrbysco.morecauldrons.MoreCauldrons;
+import com.mrbysco.morecauldrons.blocks.BlockBrickCauldron;
+import com.mrbysco.morecauldrons.blocks.BlockCobbleCauldron;
+import com.mrbysco.morecauldrons.blocks.BlockDiamondCauldron;
+import com.mrbysco.morecauldrons.blocks.BlockGlassCauldron;
+import com.mrbysco.morecauldrons.blocks.BlockGoldCauldron;
+import com.mrbysco.morecauldrons.blocks.BlockObsidianCauldron;
+import com.mrbysco.morecauldrons.blocks.BlockStoneCauldron;
+import com.mrbysco.morecauldrons.blocks.BlockWoodenCauldron;
+import com.mrbysco.morecauldrons.blocks.inspirations.BlockEnhancedBrickCauldron;
+import com.mrbysco.morecauldrons.blocks.inspirations.BlockEnhancedCobbleCauldron;
+import com.mrbysco.morecauldrons.blocks.inspirations.BlockEnhancedDiamondCauldron;
+import com.mrbysco.morecauldrons.blocks.inspirations.BlockEnhancedGlassCauldron;
+import com.mrbysco.morecauldrons.blocks.inspirations.BlockEnhancedGoldCauldron;
+import com.mrbysco.morecauldrons.blocks.inspirations.BlockEnhancedObsidianCauldron;
+import com.mrbysco.morecauldrons.blocks.inspirations.BlockEnhancedStoneCauldron;
+import com.mrbysco.morecauldrons.blocks.inspirations.BlockEnhancedWoodenCauldron;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.MapColor;

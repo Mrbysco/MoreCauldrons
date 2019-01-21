@@ -1,4 +1,4 @@
-package com.Mrbysco.MoreCauldrons.blocks.inspirations;
+package com.mrbysco.morecauldrons.blocks.inspirations;
 
 public interface ICauldron {
 

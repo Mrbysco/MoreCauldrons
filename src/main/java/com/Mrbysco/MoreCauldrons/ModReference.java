@@ -1,4 +1,4 @@
-package com.Mrbysco.MoreCauldrons;
+package com.mrbysco.morecauldrons;
 
 public class ModReference {
 	public static final String MOD_ID = "morecauldrons";
@@ -8,6 +8,6 @@ public class ModReference {
 	public static final String ACCEPTED_VERSIONS = "[1.12]";
 	public static final String DEPENDENCIES = "after:inspirations;";
 			
-	public static final String CLIENT_PROXY_CLASS = "com.Mrbysco.MoreCauldrons.proxy.ClientProxy";
-	public static final String SERVER_PROXY_CLASS = "com.Mrbysco.MoreCauldrons.proxy.ServerProxy";
+	public static final String CLIENT_PROXY_CLASS = "com.mrbysco.morecauldrons.proxy.ClientProxy";
+	public static final String SERVER_PROXY_CLASS = "com.mrbysco.morecauldrons.proxy.ServerProxy";
 }

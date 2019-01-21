@@ -1,6 +1,6 @@
-package com.Mrbysco.MoreCauldrons.items;
+package com.mrbysco.morecauldrons.items;
 
-import com.Mrbysco.MoreCauldrons.ModReference;
+import com.mrbysco.morecauldrons.ModReference;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlockSpecial;

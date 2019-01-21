@@ -1,9 +1,9 @@
-package com.Mrbysco.MoreCauldrons.blocks.inspirations.jei;
+package com.mrbysco.morecauldrons.blocks.inspirations.jei;
 
 import javax.annotation.Nonnull;
 
-import com.Mrbysco.MoreCauldrons.blocks.inspirations.ICauldron;
-import com.Mrbysco.MoreCauldrons.init.ModBlocks;
+import com.mrbysco.morecauldrons.blocks.inspirations.ICauldron;
+import com.mrbysco.morecauldrons.init.ModBlocks;
 
 import knightminer.inspirations.common.Config;
 import knightminer.inspirations.common.PulseBase;

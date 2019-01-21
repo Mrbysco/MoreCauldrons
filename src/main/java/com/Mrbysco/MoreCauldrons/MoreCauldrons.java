@@ -1,11 +1,11 @@
-package com.Mrbysco.MoreCauldrons;
+package com.mrbysco.morecauldrons;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.Mrbysco.MoreCauldrons.config.MoreCauldronsConfigGen;
-import com.Mrbysco.MoreCauldrons.events.EnhancedRecipeEvents;
-import com.Mrbysco.MoreCauldrons.init.CauldronTab;
-import com.Mrbysco.MoreCauldrons.proxy.CommonProxy;
+import com.mrbysco.morecauldrons.config.MoreCauldronsConfigGen;
+import com.mrbysco.morecauldrons.events.EnhancedRecipeEvents;
+import com.mrbysco.morecauldrons.init.CauldronTab;
+import com.mrbysco.morecauldrons.proxy.CommonProxy;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Loader;

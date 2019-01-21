@@ -1,4 +1,4 @@
-package com.Mrbysco.MoreCauldrons.init;
+package com.mrbysco.morecauldrons.init;
 
 import java.util.ArrayList;
 

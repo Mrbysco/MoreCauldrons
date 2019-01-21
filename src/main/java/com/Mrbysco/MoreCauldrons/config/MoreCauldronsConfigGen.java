@@ -1,6 +1,6 @@
-package com.Mrbysco.MoreCauldrons.config;
+package com.mrbysco.morecauldrons.config;
 
-import com.Mrbysco.MoreCauldrons.ModReference;
+import com.mrbysco.morecauldrons.ModReference;
 
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;

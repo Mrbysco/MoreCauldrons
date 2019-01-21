@@ -1,10 +1,10 @@
-package com.Mrbysco.MoreCauldrons.proxy;
+package com.mrbysco.morecauldrons.proxy;
 
-import com.Mrbysco.MoreCauldrons.ModReference;
-import com.Mrbysco.MoreCauldrons.MoreCauldrons;
-import com.Mrbysco.MoreCauldrons.blocks.inspirations.ICauldron;
-import com.Mrbysco.MoreCauldrons.init.ModBlocks;
-import com.Mrbysco.MoreCauldrons.init.ModItems;
+import com.mrbysco.morecauldrons.ModReference;
+import com.mrbysco.morecauldrons.MoreCauldrons;
+import com.mrbysco.morecauldrons.blocks.inspirations.ICauldron;
+import com.mrbysco.morecauldrons.init.ModBlocks;
+import com.mrbysco.morecauldrons.init.ModItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.IBakedModel;

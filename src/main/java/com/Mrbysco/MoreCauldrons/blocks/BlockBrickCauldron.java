@@ -1,8 +1,8 @@
-package com.Mrbysco.MoreCauldrons.blocks;
+package com.mrbysco.morecauldrons.blocks;
 
 import java.util.Random;
 
-import com.Mrbysco.MoreCauldrons.ModReference;
+import com.mrbysco.morecauldrons.ModReference;
 
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
