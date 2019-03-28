@@ -1,10 +1,7 @@
 package com.mrbysco.morecauldrons.blocks.inspirations.jei;
 
-import javax.annotation.Nonnull;
-
 import com.mrbysco.morecauldrons.blocks.inspirations.ICauldron;
 import com.mrbysco.morecauldrons.init.ModBlocks;
-
 import knightminer.inspirations.common.Config;
 import knightminer.inspirations.common.PulseBase;
 import knightminer.inspirations.plugins.jei.cauldron.CauldronRecipeCategory;
@@ -13,6 +10,8 @@ import mezz.jei.api.IModRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Loader;
+
+import javax.annotation.Nonnull;
 
 @mezz.jei.api.JEIPlugin
 public class JEIPlugin implements IModPlugin {

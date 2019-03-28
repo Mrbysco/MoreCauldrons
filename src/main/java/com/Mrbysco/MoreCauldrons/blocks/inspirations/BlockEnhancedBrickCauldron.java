@@ -1,9 +1,6 @@
 package com.mrbysco.morecauldrons.blocks.inspirations;
 
-import java.util.Random;
-
 import com.mrbysco.morecauldrons.ModReference;
-
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
@@ -13,6 +10,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+
+import java.util.Random;
 
 public class BlockEnhancedBrickCauldron extends BlockEnhancedCauldronBase implements ICauldron{
 	

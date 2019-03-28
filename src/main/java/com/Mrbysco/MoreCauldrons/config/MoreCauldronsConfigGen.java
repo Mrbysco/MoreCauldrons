@@ -1,7 +1,6 @@
 package com.mrbysco.morecauldrons.config;
 
 import com.mrbysco.morecauldrons.ModReference;
-
 import net.minecraftforge.common.config.Config;
 import net.minecraftforge.common.config.ConfigManager;
 import net.minecraftforge.fml.client.event.ConfigChangedEvent;
