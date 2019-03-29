@@ -15,6 +15,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
+@SuppressWarnings("deprecated")
 public class BlockWoodenCauldron extends BlockCauldronBase{
 	
 	private final MapColor mapcolor;
@@ -33,7 +34,7 @@ public class BlockWoodenCauldron extends BlockCauldronBase{
 	public MapColor getMapcolor() {
 		return this.mapcolor;
 	}
-	
+
 	@Override
 	public Material getMaterial(IBlockState state) {
 		return Material.WOOD;

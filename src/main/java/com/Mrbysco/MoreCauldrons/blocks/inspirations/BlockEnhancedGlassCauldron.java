@@ -14,6 +14,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
+@SuppressWarnings("deprecated")
 public class BlockEnhancedGlassCauldron extends BlockEnhancedCauldronBase implements ICauldron{
 	
 	public BlockEnhancedGlassCauldron(String registryName) {

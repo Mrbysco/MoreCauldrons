@@ -13,6 +13,7 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
+@SuppressWarnings("deprecated")
 public class BlockEnhancedBrickCauldron extends BlockEnhancedCauldronBase implements ICauldron{
 	
 	public BlockEnhancedBrickCauldron(String registryName) {
@@ -24,12 +25,12 @@ public class BlockEnhancedBrickCauldron extends BlockEnhancedCauldronBase implem
 		this.setUnlocalizedName(ModReference.MOD_PREFIX + registryName.replaceAll("_", ""));
 		this.setRegistryName(registryName);
 	}
-	
+
 	@Override
 	public Material getMaterial(IBlockState state) {
 		return Material.ROCK;
 	}
-	
+
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
 		return Item.getItemFromBlock(this);

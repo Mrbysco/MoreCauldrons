@@ -14,6 +14,7 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
+@SuppressWarnings("deprecated")
 public class BlockEnhancedWoodenCauldron extends BlockEnhancedCauldronBase implements ICauldron{
 	
 	private final MapColor mapcolor;

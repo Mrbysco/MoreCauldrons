@@ -4,7 +4,7 @@ public class ModReference {
 	public static final String MOD_ID = "morecauldrons";
 	public static final String MOD_NAME = "More Cauldrons";
 	public static final String MOD_PREFIX = "morecauldrons:";
-	public static final String VERSION = "1.4.2.4";
+	public static final String VERSION = "1.4.3";
 	public static final String ACCEPTED_VERSIONS = "[1.12]";
 	public static final String DEPENDENCIES = "after:inspirations;";
 			

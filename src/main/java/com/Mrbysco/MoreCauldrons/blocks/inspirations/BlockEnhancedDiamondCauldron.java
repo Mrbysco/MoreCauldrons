@@ -13,6 +13,7 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
+@SuppressWarnings("deprecated")
 public class BlockEnhancedDiamondCauldron extends BlockEnhancedCauldronBase implements ICauldron{
 	
 	public BlockEnhancedDiamondCauldron(String registryName) {

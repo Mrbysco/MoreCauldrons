@@ -12,6 +12,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
+@SuppressWarnings("deprecated")
 public class BlockCobbleCauldron extends BlockCauldronBase{
 		
 	public BlockCobbleCauldron(String registryName) {

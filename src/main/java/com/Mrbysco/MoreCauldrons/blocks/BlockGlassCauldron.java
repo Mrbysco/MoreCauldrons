@@ -15,6 +15,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+@SuppressWarnings("deprecated")
 public class BlockGlassCauldron extends BlockCauldronBase{
 		
 	public BlockGlassCauldron(String registryName) {
