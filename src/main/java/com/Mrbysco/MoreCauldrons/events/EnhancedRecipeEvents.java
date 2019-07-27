@@ -88,7 +88,7 @@ public class EnhancedRecipeEvents {
 										world.setBlockState(pos.west(), Blocks.FIRE.getDefaultState(), 3);
 									if(world.getBlockState(pos.east()).getMaterial() == Material.AIR && world.rand.nextInt(100) < 1)
 										world.setBlockState(pos.east(), Blocks.FIRE.getDefaultState(), 3);
-									
+
 									if(MoreCauldronsConfigGen.general.liquidDropping)
 									{
 										Block fluidBlock = state.getFluid().getBlock();
