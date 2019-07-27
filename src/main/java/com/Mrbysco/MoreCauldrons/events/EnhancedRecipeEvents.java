@@ -24,7 +24,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 public class EnhancedRecipeEvents {
 
@@ -60,47 +59,44 @@ public class EnhancedRecipeEvents {
 
 	@SubscribeEvent(priority = EventPriority.HIGH)
 	public static void CauldronTickEvent(TickEvent.WorldTickEvent event) {
+		if(!MoreCauldronsConfigGen.general.woodBurning) {
+			return;
+		}
+
 		World world = event.world;
-		
 		ArrayList<TileEntity> TileList = new ArrayList<>(world.loadedTileEntityList);
-		
 		for (TileEntity tile : TileList)
 		{
-			if(tile instanceof TileCauldron)
-			{
-				TileCauldron cauldron = (TileCauldron)tile;
-				BlockPos pos = cauldron.getPos();
-				Block block = world.getBlockState(pos).getBlock();
-				
-				if(cauldron.getContentType() == CauldronContents.FLUID)
+			if (world.isBlockLoaded(tile.getPos())) {
+				if(tile instanceof TileCauldron)
 				{
-					CauldronState state = CauldronState.fromNBT(cauldron.serializeNBT().getCompoundTag(cauldron.TAG_STATE));
-					if(block instanceof BlockEnhancedWoodenCauldron)
-					{
-						if(state.getFluid().getTemperature() >= 350)
-						{		
-							Random random = world.rand;
-							int randInt = random.nextInt(10);
-
-							if(randInt < 2)
+					TileCauldron cauldron = (TileCauldron)tile;
+					BlockPos pos = cauldron.getPos();
+					if(world.getBlockState(pos).getBlock() instanceof BlockEnhancedWoodenCauldron) {
+						if(cauldron.getContentType() == CauldronContents.FLUID)
+						{
+							CauldronState state = CauldronState.fromNBT(cauldron.serializeNBT().getCompoundTag(cauldron.TAG_STATE));
+							if(state.getFluid().getTemperature() >= 450)
 							{
-								if(MoreCauldronsConfigGen.general.woodBurning)
+								if(world.rand.nextInt(10) < 2)
 								{
-									if(world.getBlockState(pos.north()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
-										world.setBlockState(pos.north(), Blocks.FIRE.getDefaultState(), 3);
-									if(world.getBlockState(pos.south()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
-										world.setBlockState(pos.south(), Blocks.FIRE.getDefaultState(), 3);
-									if(world.getBlockState(pos.west()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
-										world.setBlockState(pos.west(), Blocks.FIRE.getDefaultState(), 3);
-									if(world.getBlockState(pos.east()).getMaterial() == Material.AIR && random.nextInt(100) < 1)
-										world.setBlockState(pos.east(), Blocks.FIRE.getDefaultState(), 3);
-								}
-								if(MoreCauldronsConfigGen.general.liquidDropping)
-								{
-									int rand2 = random.nextInt(100);
-									Block fluidBlock = state.getFluid().getBlock();
-									if(rand2 < 3 && fluidBlock != null)
-										world.setBlockState(pos, fluidBlock.getDefaultState(), 6);
+									if(MoreCauldronsConfigGen.general.woodBurning)
+									{
+										if(world.getBlockState(pos.north()).getMaterial() == Material.AIR && world.rand.nextInt(100) < 1)
+											world.setBlockState(pos.north(), Blocks.FIRE.getDefaultState(), 3);
+										if(world.getBlockState(pos.south()).getMaterial() == Material.AIR && world.rand.nextInt(100) < 1)
+											world.setBlockState(pos.south(), Blocks.FIRE.getDefaultState(), 3);
+										if(world.getBlockState(pos.west()).getMaterial() == Material.AIR && world.rand.nextInt(100) < 1)
+											world.setBlockState(pos.west(), Blocks.FIRE.getDefaultState(), 3);
+										if(world.getBlockState(pos.east()).getMaterial() == Material.AIR && world.rand.nextInt(100) < 1)
+											world.setBlockState(pos.east(), Blocks.FIRE.getDefaultState(), 3);
+									}
+									if(MoreCauldronsConfigGen.general.liquidDropping)
+									{
+										Block fluidBlock = state.getFluid().getBlock();
+										if(world.rand.nextInt(100) < 3 && fluidBlock != null)
+											world.setBlockState(pos, fluidBlock.getDefaultState(), 6);
+									}
 								}
 							}
 						}
