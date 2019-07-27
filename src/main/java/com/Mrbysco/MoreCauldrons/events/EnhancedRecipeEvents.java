@@ -80,17 +80,15 @@ public class EnhancedRecipeEvents {
 							{
 								if(world.rand.nextInt(10) < 2)
 								{
-									if(MoreCauldronsConfigGen.general.woodBurning)
-									{
-										if(world.getBlockState(pos.north()).getMaterial() == Material.AIR && world.rand.nextInt(100) < 1)
-											world.setBlockState(pos.north(), Blocks.FIRE.getDefaultState(), 3);
-										if(world.getBlockState(pos.south()).getMaterial() == Material.AIR && world.rand.nextInt(100) < 1)
-											world.setBlockState(pos.south(), Blocks.FIRE.getDefaultState(), 3);
-										if(world.getBlockState(pos.west()).getMaterial() == Material.AIR && world.rand.nextInt(100) < 1)
-											world.setBlockState(pos.west(), Blocks.FIRE.getDefaultState(), 3);
-										if(world.getBlockState(pos.east()).getMaterial() == Material.AIR && world.rand.nextInt(100) < 1)
-											world.setBlockState(pos.east(), Blocks.FIRE.getDefaultState(), 3);
-									}
+									if(world.getBlockState(pos.north()).getMaterial() == Material.AIR && world.rand.nextInt(100) < 1)
+										world.setBlockState(pos.north(), Blocks.FIRE.getDefaultState(), 3);
+									if(world.getBlockState(pos.south()).getMaterial() == Material.AIR && world.rand.nextInt(100) < 1)
+										world.setBlockState(pos.south(), Blocks.FIRE.getDefaultState(), 3);
+									if(world.getBlockState(pos.west()).getMaterial() == Material.AIR && world.rand.nextInt(100) < 1)
+										world.setBlockState(pos.west(), Blocks.FIRE.getDefaultState(), 3);
+									if(world.getBlockState(pos.east()).getMaterial() == Material.AIR && world.rand.nextInt(100) < 1)
+										world.setBlockState(pos.east(), Blocks.FIRE.getDefaultState(), 3);
+									
 									if(MoreCauldronsConfigGen.general.liquidDropping)
 									{
 										Block fluidBlock = state.getFluid().getBlock();
