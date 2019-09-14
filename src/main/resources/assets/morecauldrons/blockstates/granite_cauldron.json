@@ -13,7 +13,6 @@
 		"1" : { "model": "morecauldrons:cauldron_level1" },
 		"2" : { "model": "morecauldrons:cauldron_level2" },
 		"3" : { "model": "morecauldrons:cauldron_level3" }
-    },
-    "inventory": [{}]
+    }
   }
 }
