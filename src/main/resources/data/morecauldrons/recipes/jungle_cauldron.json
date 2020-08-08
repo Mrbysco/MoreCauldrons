@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "morecauldrons:jungle_cauldron"
+  },
+  "pattern": [
+	"W W",
+    "W W",
+    "WWW"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:jungle_planks"
+    }
+  }
+}

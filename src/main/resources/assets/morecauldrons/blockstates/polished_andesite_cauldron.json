@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "level=0": {
+      "model": "morecauldrons:block/polished_andesite_cauldron"
+    },
+    "level=1": {
+      "model": "morecauldrons:block/polished_andesite_cauldron_level1"
+    },
+    "level=2": {
+      "model": "morecauldrons:block/polished_andesite_cauldron_level2"
+    },
+    "level=3": {
+      "model": "morecauldrons:block/polished_andesite_cauldron_level3"
+    }
+  }
+}

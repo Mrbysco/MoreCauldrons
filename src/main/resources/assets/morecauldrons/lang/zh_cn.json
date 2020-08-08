@@ -1,0 +1,25 @@
+{
+    "_comment": "Config",
+    "morecauldrons.config.title": "More Cauldrons配置",
+
+    "_comment": "Tab",
+    "itemGroup.morecauldrons.cauldron": "更多炼药锅",
+
+    "_comment": "Blocks",
+    "block.morecauldrons.acacia_cauldron": "金合欢木炼药锅",
+    "block.morecauldrons.dark_oak_cauldron": "深色橡木炼药锅",
+    "block.morecauldrons.birch_cauldron": "白桦木炼药锅",
+    "block.morecauldrons.jungle_cauldron": "丛林木炼药锅",
+    "block.morecauldrons.oak_cauldron": "橡木炼药锅",
+    "block.morecauldrons.spruce_cauldron": "云杉木炼药锅",
+
+    "block.morecauldrons.cobble_cauldron": "圆石炼药锅",
+
+    "block.morecauldrons.stone_cauldron": "石头炼药锅",
+    "block.morecauldrons.granite_cauldron": "花岗岩炼药锅",
+    "block.morecauldrons.polished_granite_cauldron": "磨制花岗岩炼药锅",
+    "block.morecauldrons.diorite_cauldron": "闪长岩炼药锅",
+    "block.morecauldrons.polished_diorite_cauldron": "磨制闪长岩炼药锅",
+    "block.morecauldrons.andesite_cauldron": "安山岩炼药锅",
+    "block.morecauldrons.polished_andesite_cauldron": "磨制安山岩炼药锅"
+}

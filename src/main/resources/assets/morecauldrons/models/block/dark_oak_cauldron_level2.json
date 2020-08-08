@@ -1,0 +1,10 @@
+{
+  "parent": "block/cauldron_level2",
+  "textures": {
+    "particle": "block/dark_oak_planks",
+    "top": "block/dark_oak_planks",
+    "bottom": "block/dark_oak_planks",
+    "side": "block/dark_oak_planks",
+    "inside": "block/dark_oak_planks"
+  }
+}

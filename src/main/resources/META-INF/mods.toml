@@ -1,0 +1,14 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+issueTrackerURL="https://github.com/Mrbysco/MoreCauldrons/issues"
+
+[[mods]]
+modId="morecauldrons"
+version="${file.jarVersion}"
+displayName="More Cauldrons"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/more-cauldrons"
+credits="EmosewaPixel for the idea"
+authors="Mrbysco"
+description='''
+Adds more cauldrons to the game.
+'''

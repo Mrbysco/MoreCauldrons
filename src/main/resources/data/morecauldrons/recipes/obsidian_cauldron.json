@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "morecauldrons:obsidian_cauldron"
+  },
+  "pattern": [
+	"O O",
+    "O O",
+    "OOO"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "O": {
+      "tag": "forge:obsidian"
+    }
+  }
+}

@@ -1,67 +1,44 @@
 package com.mrbysco.morecauldrons;
+
+import com.mrbysco.morecauldrons.client.ClientHandler;
+import com.mrbysco.morecauldrons.config.MoreCauldronsConfig;
+import com.mrbysco.morecauldrons.handler.CauldronHandler;
+import com.mrbysco.morecauldrons.init.CauldronRegistry;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.DistExecutor;
+import net.minecraftforge.fml.ModLoadingContext;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.mrbysco.morecauldrons.config.MoreCauldronsConfigGen;
-import com.mrbysco.morecauldrons.events.EnhancedRecipeEvents;
-import com.mrbysco.morecauldrons.init.CauldronTab;
-import com.mrbysco.morecauldrons.proxy.CommonProxy;
-
-import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.fml.common.Loader;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.Mod.Instance;
-import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-
-@Mod(modid = ModReference.MOD_ID, 
-	name = ModReference.MOD_NAME, 
-	version = ModReference.VERSION, 
-	acceptedMinecraftVersions = ModReference.ACCEPTED_VERSIONS,
-	dependencies = ModReference.DEPENDENCIES)
-
+@Mod(ModReference.MOD_ID)
 public class MoreCauldrons {
-	@Instance(ModReference.MOD_ID)
-	public static MoreCauldrons instance;
-	
-	@SidedProxy(clientSide = ModReference.CLIENT_PROXY_CLASS, serverSide = ModReference.SERVER_PROXY_CLASS)
-	public static CommonProxy proxy;
-	
-	public static final Logger logger = LogManager.getLogger(ModReference.MOD_ID);
-	
-	public static boolean inspirationsLoaded;
-	
-	public static CauldronTab cauldronTab = new CauldronTab();
-			
-	@EventHandler
-	public void PreInit(FMLPreInitializationEvent event)
-	{
-		inspirationsLoaded = Loader.isModLoaded("inspirations");
-		
-		logger.info("Registering config");
-		MinecraftForge.EVENT_BUS.register(new MoreCauldronsConfigGen());
+	public static final Logger LOGGER = LogManager.getLogger(ModReference.MOD_ID);
 
-		proxy.Preinit();
+	public MoreCauldrons() {
+		IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
+		ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, MoreCauldronsConfig.serverSpec);
+		eventBus.register(MoreCauldronsConfig.class);
+
+		CauldronRegistry.BLOCKS.register(eventBus);
+		CauldronRegistry.ITEMS.register(eventBus);
+
+		MinecraftForge.EVENT_BUS.register(new CauldronHandler());
+
+//		if(ModList.get().isLoaded("inspirations")) {
+//			CauldronRegistry.registerInspirationsSupport();
+//			MinecraftForge.EVENT_BUS.register(new InspirationsHandler());
+//		} else {
+			CauldronRegistry.registerVanilla();
+//		}
+
+		DistExecutor.runWhenOn(Dist.CLIENT, () -> () -> {
+			FMLJavaModLoadingContext.get().getModEventBus().addListener(ClientHandler::doClientStuff);
+			eventBus.addListener(ClientHandler::registerBlockColors);
+		});
 	}
-	
-	@EventHandler
-    public void init(FMLInitializationEvent event)
-	{
-		if(inspirationsLoaded)
-		{
-			logger.info("Registering event handlers");
-			MinecraftForge.EVENT_BUS.register(EnhancedRecipeEvents.class);
-		}
-		
-		proxy.Init();
-    }
-	
-	@EventHandler
-    public void postInit(FMLPostInitializationEvent event)
-    {
-		
-    }
 }

@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "morecauldrons:items/brick_cauldron"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "morecauldrons:item/brick_cauldron"
+  }
 }

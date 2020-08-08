@@ -1,0 +1,10 @@
+{
+  "parent": "block/cauldron_level1",
+  "textures": {
+    "particle": "block/spruce_planks",
+    "top": "block/spruce_planks",
+    "bottom": "block/spruce_planks",
+    "side": "block/spruce_planks",
+    "inside": "block/spruce_planks"
+  }
+}

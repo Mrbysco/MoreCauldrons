@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "morecauldrons:diamond_cauldron"
+  },
+  "pattern": [
+	"I I",
+    "I I",
+    "III"
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "tag": "forge:gems/diamond"
+    }
+  }
+}

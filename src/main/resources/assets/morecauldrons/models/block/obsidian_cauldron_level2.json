@@ -1,0 +1,10 @@
+{
+  "parent": "block/cauldron_level2",
+  "textures": {
+    "particle": "block/obsidian",
+    "top": "block/obsidian",
+    "bottom": "block/obsidian",
+    "side": "block/obsidian",
+    "inside": "block/obsidian"
+  }
+}
