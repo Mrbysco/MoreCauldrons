@@ -40,11 +40,11 @@ public class MoreCauldronsConfig {
 
 	@SubscribeEvent
 	public static void onLoad(final ModConfig.Loading configEvent) {
-		MoreCauldrons.LOGGER.debug("Loaded forge config file {}", configEvent.getConfig().getFileName());
+		MoreCauldrons.LOGGER.debug("Loaded More Cauldron's config file {}", configEvent.getConfig().getFileName());
 	}
 
 	@SubscribeEvent
 	public static void onFileChange(final ModConfig.Reloading configEvent) {
-		MoreCauldrons.LOGGER.debug("Forge config just got changed on the file system!");
+		MoreCauldrons.LOGGER.debug("More Cauldron's config just got changed on the file system!");
 	}
 }

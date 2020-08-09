@@ -1,10 +1,10 @@
 {
   "parent": "block/cauldron_level2",
   "textures": {
-    "particle": "block/oak_planks",
-    "top": "block/oak_planks",
-    "bottom": "block/oak_planks",
-    "side": "block/oak_planks",
-    "inside": "block/oak_planks"
+    "particle": "block/acacia_planks",
+    "top": "block/acacia_planks",
+    "bottom": "block/acacia_planks",
+    "side": "block/acacia_planks",
+    "inside": "block/acacia_planks"
   }
 }

@@ -152,7 +152,7 @@ public class CauldronGenerator {
 
         @Override
         protected void registerStatesAndModels() {
-            makeCauldron(ACACIA_CAULDRON.get(), mcLoc("block/oak_planks"));
+            makeCauldron(ACACIA_CAULDRON.get(), mcLoc("block/acacia_planks"));
             makeCauldron(DARK_OAK_CAULDRON.get(), mcLoc("block/dark_oak_planks"));
             makeCauldron(BIRCH_CAULDRON.get(), mcLoc("block/birch_planks"));
             makeCauldron(JUNGLE_CAULDRON.get(), mcLoc("block/jungle_planks"));
@@ -163,7 +163,6 @@ public class CauldronGenerator {
             makeCauldron(DIAMOND_CAULDRON.get(), mcLoc("block/diamond_block"));
 
             makeCauldron(COBBLE_CAULDRON.get(), mcLoc("block/cobblestone"));
-            makeCauldron(GLASS_CAULDRON.get(), mcLoc("block/glass"));
             makeCauldron(OBSIDIAN_CAULDRON.get(), mcLoc("block/obsidian"));
             makeCauldron(BRICK_CAULDRON.get(), mcLoc("block/bricks"));
 
