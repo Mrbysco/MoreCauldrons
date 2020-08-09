@@ -1,10 +1,10 @@
 {
-  "parent": "block/cauldron_level3",
+  "parent": "minecraft:block/cauldron_level3",
   "textures": {
-    "particle": "block/bricks",
-    "top": "block/bricks",
-    "bottom": "block/bricks",
-    "side": "block/bricks",
-    "inside": "block/bricks"
+    "particle": "minecraft:block/bricks",
+    "top": "minecraft:block/bricks",
+    "bottom": "minecraft:block/bricks",
+    "side": "minecraft:block/bricks",
+    "inside": "minecraft:block/bricks"
   }
 }

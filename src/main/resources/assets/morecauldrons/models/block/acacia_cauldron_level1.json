@@ -1,10 +1,10 @@
 {
-  "parent": "block/cauldron_level1",
+  "parent": "minecraft:block/cauldron_level1",
   "textures": {
-    "particle": "block/oak_planks",
-    "top": "block/oak_planks",
-    "bottom": "block/oak_planks",
-    "side": "block/oak_planks",
-    "inside": "block/oak_planks"
+    "particle": "minecraft:block/acacia_planks",
+    "top": "minecraft:block/acacia_planks",
+    "bottom": "minecraft:block/acacia_planks",
+    "side": "minecraft:block/acacia_planks",
+    "inside": "minecraft:block/acacia_planks"
   }
 }

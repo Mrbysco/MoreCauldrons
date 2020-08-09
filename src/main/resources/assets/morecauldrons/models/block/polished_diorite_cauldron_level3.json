@@ -1,10 +1,10 @@
 {
-  "parent": "block/cauldron_level3",
+  "parent": "minecraft:block/cauldron_level3",
   "textures": {
-    "particle": "block/polished_diorite",
-    "top": "block/polished_diorite",
-    "bottom": "block/polished_diorite",
-    "side": "block/polished_diorite",
-    "inside": "block/polished_diorite"
+    "particle": "minecraft:block/polished_diorite",
+    "top": "minecraft:block/polished_diorite",
+    "bottom": "minecraft:block/polished_diorite",
+    "side": "minecraft:block/polished_diorite",
+    "inside": "minecraft:block/polished_diorite"
   }
 }

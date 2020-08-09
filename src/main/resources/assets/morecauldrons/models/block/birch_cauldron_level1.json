@@ -1,10 +1,10 @@
 {
-  "parent": "block/cauldron_level1",
+  "parent": "minecraft:block/cauldron_level1",
   "textures": {
-    "particle": "block/birch_planks",
-    "top": "block/birch_planks",
-    "bottom": "block/birch_planks",
-    "side": "block/birch_planks",
-    "inside": "block/birch_planks"
+    "particle": "minecraft:block/birch_planks",
+    "top": "minecraft:block/birch_planks",
+    "bottom": "minecraft:block/birch_planks",
+    "side": "minecraft:block/birch_planks",
+    "inside": "minecraft:block/birch_planks"
   }
 }

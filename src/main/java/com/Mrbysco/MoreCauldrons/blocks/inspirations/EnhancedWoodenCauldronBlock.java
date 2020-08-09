@@ -13,13 +13,7 @@ import net.minecraftforge.common.ToolType;
 public class EnhancedWoodenCauldronBlock extends EnhancedCauldronBlock implements ICauldron{
 
 	public EnhancedWoodenCauldronBlock(Block.Properties properties){
-		super();
-		//super(properties.sound(SoundType.WOOD).harvestTool(ToolType.AXE).hardnessAndResistance(2.0F, 3.0F));
-	}
-
-	@Override
-	public ToolType getHarvestTool(BlockState state) {
-		return ToolType.AXE;
+		super(properties.sound(SoundType.WOOD).harvestTool(ToolType.AXE).hardnessAndResistance(2.0F, 3.0F));
 	}
 
 	@Override

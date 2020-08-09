@@ -5,6 +5,6 @@ import net.minecraft.block.Block;
 
 public class EnhancedCauldronBase extends EnhancedCauldronBlock {
 	public EnhancedCauldronBase(Block.Properties properties){
-		super();
+		super(properties);
 	}
 }

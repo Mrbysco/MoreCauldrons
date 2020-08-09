@@ -1,10 +1,10 @@
 {
-  "parent": "block/cauldron_level2",
+  "parent": "minecraft:block/cauldron_level2",
   "textures": {
-    "particle": "block/stone",
-    "top": "block/stone",
-    "bottom": "block/stone",
-    "side": "block/stone",
-    "inside": "block/stone"
+    "particle": "minecraft:block/stone",
+    "top": "minecraft:block/stone",
+    "bottom": "minecraft:block/stone",
+    "side": "minecraft:block/stone",
+    "inside": "minecraft:block/stone"
   }
 }

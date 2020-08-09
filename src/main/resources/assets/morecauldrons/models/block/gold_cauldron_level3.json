@@ -1,10 +1,10 @@
 {
-  "parent": "block/cauldron_level3",
+  "parent": "minecraft:block/cauldron_level3",
   "textures": {
-    "particle": "block/gold_block",
-    "top": "block/gold_block",
-    "bottom": "block/gold_block",
-    "side": "block/gold_block",
-    "inside": "block/gold_block"
+    "particle": "minecraft:block/gold_block",
+    "top": "minecraft:block/gold_block",
+    "bottom": "minecraft:block/gold_block",
+    "side": "minecraft:block/gold_block",
+    "inside": "minecraft:block/gold_block"
   }
 }

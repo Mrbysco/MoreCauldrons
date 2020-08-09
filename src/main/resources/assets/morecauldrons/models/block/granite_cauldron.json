@@ -1,10 +1,10 @@
 {
-  "parent": "block/cauldron",
+  "parent": "minecraft:block/cauldron",
   "textures": {
-    "particle": "block/granite",
-    "top": "block/granite",
-    "bottom": "block/granite",
-    "side": "block/granite",
-    "inside": "block/granite"
+    "particle": "minecraft:block/granite",
+    "top": "minecraft:block/granite",
+    "bottom": "minecraft:block/granite",
+    "side": "minecraft:block/granite",
+    "inside": "minecraft:block/granite"
   }
 }

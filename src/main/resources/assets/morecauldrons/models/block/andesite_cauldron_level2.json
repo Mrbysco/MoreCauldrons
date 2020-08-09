@@ -1,10 +1,10 @@
 {
-  "parent": "block/cauldron_level2",
+  "parent": "minecraft:block/cauldron_level2",
   "textures": {
-    "particle": "block/andesite",
-    "top": "block/andesite",
-    "bottom": "block/andesite",
-    "side": "block/andesite",
-    "inside": "block/andesite"
+    "particle": "minecraft:block/andesite",
+    "top": "minecraft:block/andesite",
+    "bottom": "minecraft:block/andesite",
+    "side": "minecraft:block/andesite",
+    "inside": "minecraft:block/andesite"
   }
 }

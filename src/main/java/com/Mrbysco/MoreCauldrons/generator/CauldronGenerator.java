@@ -9,13 +9,13 @@ import net.minecraft.block.CauldronBlock;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.LootTableProvider;
 import net.minecraft.data.loot.BlockLootTables;
+import net.minecraft.loot.LootParameterSet;
+import net.minecraft.loot.LootParameterSets;
+import net.minecraft.loot.LootTable;
+import net.minecraft.loot.LootTable.Builder;
+import net.minecraft.loot.LootTableManager;
+import net.minecraft.loot.ValidationTracker;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.storage.loot.LootParameterSet;
-import net.minecraft.world.storage.loot.LootParameterSets;
-import net.minecraft.world.storage.loot.LootTable;
-import net.minecraft.world.storage.loot.LootTable.Builder;
-import net.minecraft.world.storage.loot.LootTableManager;
-import net.minecraft.world.storage.loot.ValidationTracker;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ExistingFileHelper;
@@ -66,7 +66,6 @@ public class CauldronGenerator {
         protected void validate(Map<ResourceLocation, LootTable> map, ValidationTracker validationtracker) {
             map.forEach((name, table) -> LootTableManager.func_227508_a_(validationtracker, name, table));
         }
-
         private class Blocks extends BlockLootTables {
             @Override
             protected void addTables() {
@@ -152,7 +151,7 @@ public class CauldronGenerator {
 
         @Override
         protected void registerStatesAndModels() {
-            makeCauldron(ACACIA_CAULDRON.get(), mcLoc("block/oak_planks"));
+            makeCauldron(ACACIA_CAULDRON.get(), mcLoc("block/acacia_planks"));
             makeCauldron(DARK_OAK_CAULDRON.get(), mcLoc("block/dark_oak_planks"));
             makeCauldron(BIRCH_CAULDRON.get(), mcLoc("block/birch_planks"));
             makeCauldron(JUNGLE_CAULDRON.get(), mcLoc("block/jungle_planks"));
@@ -163,7 +162,6 @@ public class CauldronGenerator {
             makeCauldron(DIAMOND_CAULDRON.get(), mcLoc("block/diamond_block"));
 
             makeCauldron(COBBLE_CAULDRON.get(), mcLoc("block/cobblestone"));
-            makeCauldron(GLASS_CAULDRON.get(), mcLoc("block/glass"));
             makeCauldron(OBSIDIAN_CAULDRON.get(), mcLoc("block/obsidian"));
             makeCauldron(BRICK_CAULDRON.get(), mcLoc("block/bricks"));
 
