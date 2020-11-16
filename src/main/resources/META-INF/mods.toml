@@ -1,6 +1,7 @@
 modLoader="javafml"
-loaderVersion="[32,)"
+loaderVersion="[34,)"
 issueTrackerURL="https://github.com/Mrbysco/MoreCauldrons/issues"
+license="MIT"
 
 [[mods]]
 modId="morecauldrons"
