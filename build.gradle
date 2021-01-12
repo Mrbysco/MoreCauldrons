@@ -101,7 +101,7 @@ dependencies {
 
     compile fg.deobf("mezz.jei:jei-${mc_version}:${version_jei}")
     compile fg.deobf("slimeknights.mantle:Mantle:${mc_version}-${mantle_version}")
-    compile fg.deobf("knightminer:Inspirations:1.16.3-${inspirations_version}")
+//    compile fg.deobf("knightminer:Inspirations:1.16.3-${inspirations_version}")
 
     runtimeOnly fg.deobf("curse.maven:ceramics-250617:3156900")
 }
