@@ -1,4 +1,4 @@
-package com.mrbysco.morecauldrons.blocks.inspirations.jei;
+package com.mrbysco.morecauldrons.compat.inspirations.jei;
 
 //@mezz.jei.api.JEIPlugin
 public class JEIPlugin {//implements IModPlugin {

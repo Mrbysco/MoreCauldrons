@@ -6,8 +6,10 @@ import com.mrbysco.morecauldrons.handler.CauldronHandler;
 import com.mrbysco.morecauldrons.init.CauldronRegistry;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.DistExecutor;
+import net.minecraftforge.fml.ModList;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
@@ -29,16 +31,27 @@ public class MoreCauldrons {
 
 		MinecraftForge.EVENT_BUS.register(new CauldronHandler());
 
-//		if(ModList.get().isLoaded("inspirations")) {
-//			CauldronRegistry.registerInspirationsSupport();
-//			MinecraftForge.EVENT_BUS.register(new InspirationsHandler());
-//		} else {
+		if(ModList.get().isLoaded("inspirations")) {
+			if(knightminer.inspirations.common.Config.extendedCauldron.get()) {
+				CauldronRegistry.registerInspirationsSupport();
+				com.mrbysco.morecauldrons.compat.inspirations.CompatSetup.TILES.register(eventBus);
+			} else {
+				CauldronRegistry.registerVanilla();
+			}
+			eventBus.addListener(com.mrbysco.morecauldrons.compat.inspirations.CompatSetup::commonSetup);
+			DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
+				eventBus.addListener(EventPriority.LOWEST, com.mrbysco.morecauldrons.compat.inspirations.CompatClientHandler::registerModelLoaders);
+				eventBus.addListener(com.mrbysco.morecauldrons.compat.inspirations.CompatClientHandler::registerBlockColors);
+			});
+		} else {
 			CauldronRegistry.registerVanilla();
-//		}
+		}
 
-		DistExecutor.runWhenOn(Dist.CLIENT, () -> () -> {
+		DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
 			FMLJavaModLoadingContext.get().getModEventBus().addListener(ClientHandler::doClientStuff);
-			eventBus.addListener(ClientHandler::registerBlockColors);
+			if(!ModList.get().isLoaded("inspirations")) {
+				eventBus.addListener(ClientHandler::registerBlockColors);
+			}
 		});
 	}
 }

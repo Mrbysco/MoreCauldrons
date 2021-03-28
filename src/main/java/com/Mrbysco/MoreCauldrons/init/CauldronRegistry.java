@@ -69,30 +69,30 @@ public class CauldronRegistry {
         POLISHED_ANDESITE_CAULDRON = registerBlock("polished_andesite_cauldron", () -> new BaseCauldronBlock(Block.Properties.create(Material.ROCK, MaterialColor.STONE).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
     }
 
-/*    public static void registerInspirationsSupport() {
-        ACACIA_CAULDRON = registerBlock("acacia_cauldron", () -> new EnhancedWoodenCauldronBlock(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE)), CauldronTab.CAULDRON_TAB);
-        DARK_OAK_CAULDRON = registerBlock("dark_oak_cauldron", () -> new EnhancedWoodenCauldronBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN)), CauldronTab.CAULDRON_TAB);
-        BIRCH_CAULDRON = registerBlock("birch_cauldron", () -> new EnhancedWoodenCauldronBlock(Block.Properties.create(Material.WOOD, MaterialColor.SAND)), CauldronTab.CAULDRON_TAB);
-        JUNGLE_CAULDRON = registerBlock("jungle_cauldron", () -> new EnhancedWoodenCauldronBlock(Block.Properties.create(Material.WOOD, MaterialColor.DIRT)), CauldronTab.CAULDRON_TAB);
-        OAK_CAULDRON = registerBlock("oak_cauldron", () -> new EnhancedWoodenCauldronBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD)), CauldronTab.CAULDRON_TAB);
-        SPRUCE_CAULDRON = registerBlock("spruce_cauldron", () -> new EnhancedWoodenCauldronBlock(Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN)), CauldronTab.CAULDRON_TAB);
+    public static void registerInspirationsSupport() {
+        ACACIA_CAULDRON = registerBlock("acacia_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedWoodenCauldronBlock(Block.Properties.create(Material.WOOD, MaterialColor.ADOBE)), CauldronTab.CAULDRON_TAB);
+        DARK_OAK_CAULDRON = registerBlock("dark_oak_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedWoodenCauldronBlock(Block.Properties.create(Material.WOOD, MaterialColor.BROWN)), CauldronTab.CAULDRON_TAB);
+        BIRCH_CAULDRON = registerBlock("birch_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedWoodenCauldronBlock(Block.Properties.create(Material.WOOD, MaterialColor.SAND)), CauldronTab.CAULDRON_TAB);
+        JUNGLE_CAULDRON = registerBlock("jungle_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedWoodenCauldronBlock(Block.Properties.create(Material.WOOD, MaterialColor.DIRT)), CauldronTab.CAULDRON_TAB);
+        OAK_CAULDRON = registerBlock("oak_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedWoodenCauldronBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD)), CauldronTab.CAULDRON_TAB);
+        SPRUCE_CAULDRON = registerBlock("spruce_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedWoodenCauldronBlock(Block.Properties.create(Material.WOOD, MaterialColor.OBSIDIAN)), CauldronTab.CAULDRON_TAB);
 
-        GOLD_CAULDRON = registerBlock("gold_cauldron", () -> new EnhancedCauldronBase(Block.Properties.create(Material.IRON, MaterialColor.GOLD).sound(SoundType.METAL).hardnessAndResistance(3.0F, 10.0F)), CauldronTab.CAULDRON_TAB);
-        DIAMOND_CAULDRON = registerBlock("diamond_cauldron", () -> new EnhancedCauldronBase(Block.Properties.create(Material.IRON, MaterialColor.DIAMOND).sound(SoundType.METAL).hardnessAndResistance(5.0F, 10.0F)), CauldronTab.CAULDRON_TAB);
+        GOLD_CAULDRON = registerBlock("gold_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedCauldronBase(Block.Properties.create(Material.IRON, MaterialColor.GOLD).sound(SoundType.METAL).hardnessAndResistance(3.0F, 10.0F)), CauldronTab.CAULDRON_TAB);
+        DIAMOND_CAULDRON = registerBlock("diamond_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedCauldronBase(Block.Properties.create(Material.IRON, MaterialColor.DIAMOND).sound(SoundType.METAL).hardnessAndResistance(5.0F, 10.0F)), CauldronTab.CAULDRON_TAB);
 
-        COBBLE_CAULDRON = registerBlock("cobble_cauldron", () -> new EnhancedCauldronBase(Block.Properties.create(Material.ROCK).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
-        GLASS_CAULDRON = registerBlock("glass_cauldron", () -> new EnhancedCauldronBase(Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid()), CauldronTab.CAULDRON_TAB);
-        OBSIDIAN_CAULDRON = registerBlock("obsidian_cauldron", () -> new EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
-        BRICK_CAULDRON = registerBlock("brick_cauldron", () -> new EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.RED).hardnessAndResistance(2.0F, 10.0F).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
+        COBBLE_CAULDRON = registerBlock("cobble_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedCauldronBase(Block.Properties.create(Material.ROCK).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
+        GLASS_CAULDRON = registerBlock("glass_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedCauldronBase(Block.Properties.create(Material.GLASS).hardnessAndResistance(0.3F).sound(SoundType.GLASS).notSolid()), CauldronTab.CAULDRON_TAB);
+        OBSIDIAN_CAULDRON = registerBlock("obsidian_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.BLACK).hardnessAndResistance(50.0F, 1200.0F).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
+        BRICK_CAULDRON = registerBlock("brick_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.RED).hardnessAndResistance(2.0F, 10.0F).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
 
-        STONE_CAULDRON = registerBlock("stone_cauldron", () -> new EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.STONE).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
-        GRANITE_CAULDRON = registerBlock("granite_cauldron", () -> new EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.DIRT).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
-        POLISHED_GRANITE_CAULDRON = registerBlock("polished_granite_cauldron", () -> new EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.DIRT).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
-        DIORITE_CAULDRON = registerBlock("diorite_cauldron", () -> new EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.QUARTZ).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
-        POLISHED_DIORITE_CAULDRON = registerBlock("polished_diorite_cauldron", () -> new EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.QUARTZ).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
-        ANDESITE_CAULDRON = registerBlock("andesite_cauldron", () -> new EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.STONE).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
-        POLISHED_ANDESITE_CAULDRON = registerBlock("polished_andesite_cauldron", () -> new EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.STONE).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
-    }*/
+        STONE_CAULDRON = registerBlock("stone_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.STONE).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
+        GRANITE_CAULDRON = registerBlock("granite_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.DIRT).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
+        POLISHED_GRANITE_CAULDRON = registerBlock("polished_granite_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.DIRT).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
+        DIORITE_CAULDRON = registerBlock("diorite_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.QUARTZ).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
+        POLISHED_DIORITE_CAULDRON = registerBlock("polished_diorite_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.QUARTZ).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
+        ANDESITE_CAULDRON = registerBlock("andesite_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.STONE).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
+        POLISHED_ANDESITE_CAULDRON = registerBlock("polished_andesite_cauldron", () -> new com.mrbysco.morecauldrons.compat.inspirations.blocks.EnhancedCauldronBase(Block.Properties.create(Material.ROCK, MaterialColor.STONE).sound(SoundType.STONE)), CauldronTab.CAULDRON_TAB);
+    }
 
     public static <B extends Block> RegistryObject<B> registerBlock(String name, Supplier<? extends B> supplier, ItemGroup itemGroup) {
         RegistryObject<B> block = CauldronRegistry.BLOCKS.register(name, supplier);

@@ -32,7 +32,25 @@ import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import java.util.function.Supplier;
 
-import static com.mrbysco.morecauldrons.init.CauldronRegistry.*;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.ACACIA_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.ANDESITE_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.BIRCH_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.BRICK_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.COBBLE_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.DARK_OAK_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.DIAMOND_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.DIORITE_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.GLASS_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.GOLD_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.GRANITE_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.JUNGLE_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.OAK_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.OBSIDIAN_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.POLISHED_ANDESITE_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.POLISHED_DIORITE_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.POLISHED_GRANITE_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.SPRUCE_CAULDRON;
+import static com.mrbysco.morecauldrons.init.CauldronRegistry.STONE_CAULDRON;
 
 @Mod.EventBusSubscriber(modid = ModReference.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class CauldronGenerator {

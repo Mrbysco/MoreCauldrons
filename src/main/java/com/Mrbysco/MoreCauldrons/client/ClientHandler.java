@@ -31,7 +31,6 @@ public class ClientHandler {
         RenderTypeLookup.setRenderLayer(CauldronRegistry.POLISHED_DIORITE_CAULDRON.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(CauldronRegistry.ANDESITE_CAULDRON.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(CauldronRegistry.POLISHED_ANDESITE_CAULDRON.get(), RenderType.getCutout());
-
         RenderTypeLookup.setRenderLayer(CauldronRegistry.GLASS_CAULDRON.get(), RenderType.getCutout());
     }
 
