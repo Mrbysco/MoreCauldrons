@@ -1,0 +1,23 @@
+{
+  "values": [
+    "morecauldrons:acacia_cauldron",
+    "morecauldrons:dark_oak_cauldron",
+    "morecauldrons:birch_cauldron",
+    "morecauldrons:jungle_cauldron",
+    "morecauldrons:oak_cauldron",
+    "morecauldrons:spruce_cauldron",
+    "morecauldrons:gold_cauldron",
+    "morecauldrons:diamond_cauldron",
+    "morecauldrons:cobble_cauldron",
+    "morecauldrons:glass_cauldron",
+    "morecauldrons:obsidian_cauldron",
+    "morecauldrons:brick_cauldron",
+    "morecauldrons:stone_cauldron",
+    "morecauldrons:granite_cauldron",
+    "morecauldrons:polished_granite_cauldron",
+    "morecauldrons:diorite_cauldron",
+    "morecauldrons:polished_diorite_cauldron",
+    "morecauldrons:andesite_cauldron",
+    "morecauldrons:polished_andesite_cauldron",
+  ]
+}
