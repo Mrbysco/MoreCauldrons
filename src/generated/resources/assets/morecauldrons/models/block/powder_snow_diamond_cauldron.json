@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/powder_snow_cauldron_full",
+  "textures": {
+    "inside": "minecraft:block/diamond_block",
+    "particle": "minecraft:block/diamond_block",
+    "top": "minecraft:block/diamond_block",
+    "bottom": "minecraft:block/diamond_block",
+    "side": "minecraft:block/diamond_block"
+  }
+}

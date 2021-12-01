@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/water_cauldron_full",
+  "textures": {
+    "inside": "minecraft:block/acacia_planks",
+    "particle": "minecraft:block/acacia_planks",
+    "top": "minecraft:block/acacia_planks",
+    "bottom": "minecraft:block/acacia_planks",
+    "side": "minecraft:block/acacia_planks"
+  }
+}

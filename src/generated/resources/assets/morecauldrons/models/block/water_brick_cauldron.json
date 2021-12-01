@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/water_cauldron_full",
+  "textures": {
+    "inside": "minecraft:block/bricks",
+    "particle": "minecraft:block/bricks",
+    "top": "minecraft:block/bricks",
+    "bottom": "minecraft:block/bricks",
+    "side": "minecraft:block/bricks"
+  }
+}

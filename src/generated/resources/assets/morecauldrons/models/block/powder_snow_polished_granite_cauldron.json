@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/powder_snow_cauldron_full",
+  "textures": {
+    "inside": "minecraft:block/polished_granite",
+    "particle": "minecraft:block/polished_granite",
+    "top": "minecraft:block/polished_granite",
+    "bottom": "minecraft:block/polished_granite",
+    "side": "minecraft:block/polished_granite"
+  }
+}

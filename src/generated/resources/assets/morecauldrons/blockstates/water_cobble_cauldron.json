@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "level=1": {
+      "model": "morecauldrons:block/water_cobble_cauldron"
+    },
+    "level=2": {
+      "model": "morecauldrons:block/water_cobble_cauldron"
+    },
+    "level=3": {
+      "model": "morecauldrons:block/water_cobble_cauldron"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8.4",
+  "compatibilityLevel": "JAVA_16",
+  "package": "com.mrbysco.morecauldrons.mixin",
+  "refmap": "retraining.refmap.json",
+  "target": "@env(DEFAULT)",
+  "mixins": [
+	"CauldronInteractionMixin",
+	"LayeredCauldronBlockMixin"
+  ],
+  "client": [
+
+  ],
+  "injectors": {
+	"defaultRequire": 1
+  }
+}

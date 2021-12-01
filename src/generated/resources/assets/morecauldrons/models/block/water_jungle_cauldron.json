@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/water_cauldron_full",
+  "textures": {
+    "inside": "minecraft:block/jungle_planks",
+    "particle": "minecraft:block/jungle_planks",
+    "top": "minecraft:block/jungle_planks",
+    "bottom": "minecraft:block/jungle_planks",
+    "side": "minecraft:block/jungle_planks"
+  }
+}

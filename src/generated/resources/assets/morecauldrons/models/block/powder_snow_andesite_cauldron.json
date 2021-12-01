@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/powder_snow_cauldron_full",
+  "textures": {
+    "inside": "minecraft:block/andesite",
+    "particle": "minecraft:block/andesite",
+    "top": "minecraft:block/andesite",
+    "bottom": "minecraft:block/andesite",
+    "side": "minecraft:block/andesite"
+  }
+}

@@ -29,13 +29,6 @@ public class MoreCauldrons {
 
 		MinecraftForge.EVENT_BUS.register(new CauldronHandler());
 
-//		if(ModList.get().isLoaded("inspirations")) {
-//			CauldronRegistry.registerInspirationsSupport();
-//			MinecraftForge.EVENT_BUS.register(new InspirationsHandler());
-//		} else {
-			CauldronRegistry.registerVanilla();
-//		}
-
 		DistExecutor.runWhenOn(Dist.CLIENT, () -> () -> {
 			FMLJavaModLoadingContext.get().getModEventBus().addListener(ClientHandler::doClientStuff);
 			eventBus.addListener(ClientHandler::registerBlockColors);

@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/lava_cauldron",
+  "textures": {
+    "particle": "minecraft:block/bricks",
+    "top": "minecraft:block/bricks",
+    "bottom": "minecraft:block/bricks",
+    "side": "minecraft:block/bricks",
+    "inside": "minecraft:block/bricks"
+  }
+}

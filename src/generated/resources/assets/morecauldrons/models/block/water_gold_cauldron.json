@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/water_cauldron_full",
+  "textures": {
+    "inside": "minecraft:block/gold_block",
+    "particle": "minecraft:block/gold_block",
+    "top": "minecraft:block/gold_block",
+    "bottom": "minecraft:block/gold_block",
+    "side": "minecraft:block/gold_block"
+  }
+}

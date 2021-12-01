@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "level=1": {
+      "model": "morecauldrons:block/powder_snow_granite_cauldron"
+    },
+    "level=2": {
+      "model": "morecauldrons:block/powder_snow_granite_cauldron"
+    },
+    "level=3": {
+      "model": "morecauldrons:block/powder_snow_granite_cauldron"
+    }
+  }
+}
