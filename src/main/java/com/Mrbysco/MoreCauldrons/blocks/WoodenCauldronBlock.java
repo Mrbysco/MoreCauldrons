@@ -12,7 +12,7 @@ import net.minecraftforge.common.ToolType;
 public class WoodenCauldronBlock extends BaseCauldronBlock {
 
 	public WoodenCauldronBlock(Block.Properties properties){
-		super(properties.sound(SoundType.WOOD).harvestTool(ToolType.AXE).hardnessAndResistance(2.0F, 3.0F));
+		super(properties.sound(SoundType.WOOD).harvestTool(ToolType.AXE).strength(2.0F, 3.0F));
 	}
 
 	@Override

@@ -29,42 +29,42 @@ public class BaseCauldronBlock extends CauldronBlock {
 	}
 
 	@Override
-	public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
-		ItemStack itemstack = player.getHeldItem(handIn);
+	public ActionResultType use(BlockState state, World worldIn, BlockPos pos, PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+		ItemStack itemstack = player.getItemInHand(handIn);
 		if (itemstack.isEmpty()) {
 			return ActionResultType.PASS;
 		} else {
-			int i = state.get(LEVEL);
+			int i = state.getValue(LEVEL);
 			if (itemstack.getMaxStackSize() == 1 && FluidUtil.getFluidHandler(itemstack).isPresent()) {
 				IFluidHandlerItem fluidHandler = FluidUtil.getFluidHandler(itemstack).orElse(null);
 				Optional<FluidStack> containedFluid = FluidUtil.getFluidContained(itemstack);
 				Supplier<FluidStack> waterStackSupplier = () -> new FluidStack(Fluids.WATER, 1000);
-				if (containedFluid.isPresent() && i < 3 && !worldIn.isRemote) {
+				if (containedFluid.isPresent() && i < 3 && !worldIn.isClientSide) {
 					//Container has liquid
 					FluidStack fluidStack = containedFluid.get();
 					if (fluidStack.getFluid() == Fluids.WATER && fluidStack.getAmount() >= 1000) {
 						FluidStack drainedStack = fluidHandler.drain(waterStackSupplier.get(), FluidAction.SIMULATE);
 						if (drainedStack.getAmount() == 1000) {
 							fluidHandler.drain(waterStackSupplier.get(), FluidAction.EXECUTE);
-							player.setHeldItem(handIn, fluidHandler.getContainer());
-							player.addStat(Stats.FILL_CAULDRON);
+							player.setItemInHand(handIn, fluidHandler.getContainer());
+							player.awardStat(Stats.FILL_CAULDRON);
 							this.setWaterLevel(worldIn, pos, state, 3);
-							worldIn.playSound((PlayerEntity) null, pos, SoundEvents.ITEM_BUCKET_EMPTY, SoundCategory.BLOCKS, 1.0F, 1.0F);
+							worldIn.playSound((PlayerEntity) null, pos, SoundEvents.BUCKET_EMPTY, SoundCategory.BLOCKS, 1.0F, 1.0F);
 						}
 					}
 				} else {
 					//Container is empty
-					if (i == 3 && !worldIn.isRemote) {
-						if (!player.abilities.isCreativeMode) {
+					if (i == 3 && !worldIn.isClientSide) {
+						if (!player.abilities.instabuild) {
 							if (fluidHandler.isFluidValid(0, waterStackSupplier.get()) && fluidHandler.fill(waterStackSupplier.get(), FluidAction.SIMULATE) == 1000) {
 								fluidHandler.fill(waterStackSupplier.get(), FluidAction.EXECUTE);
-								player.setHeldItem(handIn, fluidHandler.getContainer());
+								player.setItemInHand(handIn, fluidHandler.getContainer());
 							}
 						}
 
-						player.addStat(Stats.USE_CAULDRON);
+						player.awardStat(Stats.USE_CAULDRON);
 						this.setWaterLevel(worldIn, pos, state, 0);
-						worldIn.playSound((PlayerEntity) null, pos, SoundEvents.ITEM_BUCKET_FILL, SoundCategory.BLOCKS, 1.0F, 1.0F);
+						worldIn.playSound((PlayerEntity) null, pos, SoundEvents.BUCKET_FILL, SoundCategory.BLOCKS, 1.0F, 1.0F);
 					}
 
 				}
@@ -72,6 +72,6 @@ public class BaseCauldronBlock extends CauldronBlock {
 			}
 		}
 
-		return super.onBlockActivated(state, worldIn, pos, player, handIn, hit);
+		return super.use(state, worldIn, pos, player, handIn, hit);
 	}
 }

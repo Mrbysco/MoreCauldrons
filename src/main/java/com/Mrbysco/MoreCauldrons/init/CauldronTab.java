@@ -10,7 +10,7 @@ public class CauldronTab{
 
 	public static final ItemGroup CAULDRON_TAB = new ItemGroup(ModReference.MOD_ID + ".cauldron") {
 		@OnlyIn(Dist.CLIENT)
-		public ItemStack createIcon() {
+		public ItemStack makeIcon() {
 			return new ItemStack(CauldronRegistry.OAK_CAULDRON.get());
 		}
 	};

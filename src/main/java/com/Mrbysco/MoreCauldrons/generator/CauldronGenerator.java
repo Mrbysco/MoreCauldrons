@@ -64,32 +64,32 @@ public class CauldronGenerator {
 
         @Override
         protected void validate(Map<ResourceLocation, LootTable> map, ValidationTracker validationtracker) {
-            map.forEach((name, table) -> LootTableManager.validateLootTable(validationtracker, name, table));
+            map.forEach((name, table) -> LootTableManager.validate(validationtracker, name, table));
         }
         private class Blocks extends BlockLootTables {
             @Override
             protected void addTables() {
-                this.registerDropSelfLootTable(ACACIA_CAULDRON.get());
-                this.registerDropSelfLootTable(DARK_OAK_CAULDRON.get());
-                this.registerDropSelfLootTable(BIRCH_CAULDRON.get());
-                this.registerDropSelfLootTable(JUNGLE_CAULDRON.get());
-                this.registerDropSelfLootTable(OAK_CAULDRON.get());
-                this.registerDropSelfLootTable(SPRUCE_CAULDRON.get());
+                this.dropSelf(ACACIA_CAULDRON.get());
+                this.dropSelf(DARK_OAK_CAULDRON.get());
+                this.dropSelf(BIRCH_CAULDRON.get());
+                this.dropSelf(JUNGLE_CAULDRON.get());
+                this.dropSelf(OAK_CAULDRON.get());
+                this.dropSelf(SPRUCE_CAULDRON.get());
 
-                this.registerDropSelfLootTable(GOLD_CAULDRON.get());
-                this.registerDropSelfLootTable(DIAMOND_CAULDRON.get());
-                this.registerDropSelfLootTable(COBBLE_CAULDRON.get());
-                this.registerSilkTouch(GLASS_CAULDRON.get());
-                this.registerDropSelfLootTable(OBSIDIAN_CAULDRON.get());
-                this.registerDropSelfLootTable(BRICK_CAULDRON.get());
+                this.dropSelf(GOLD_CAULDRON.get());
+                this.dropSelf(DIAMOND_CAULDRON.get());
+                this.dropSelf(COBBLE_CAULDRON.get());
+                this.dropWhenSilkTouch(GLASS_CAULDRON.get());
+                this.dropSelf(OBSIDIAN_CAULDRON.get());
+                this.dropSelf(BRICK_CAULDRON.get());
 
-                this.registerDropSelfLootTable(STONE_CAULDRON.get());
-                this.registerDropSelfLootTable(GRANITE_CAULDRON.get());
-                this.registerDropSelfLootTable(POLISHED_GRANITE_CAULDRON.get());
-                this.registerDropSelfLootTable(DIORITE_CAULDRON.get());
-                this.registerDropSelfLootTable(POLISHED_DIORITE_CAULDRON.get());
-                this.registerDropSelfLootTable(ANDESITE_CAULDRON.get());
-                this.registerDropSelfLootTable(POLISHED_ANDESITE_CAULDRON.get());
+                this.dropSelf(STONE_CAULDRON.get());
+                this.dropSelf(GRANITE_CAULDRON.get());
+                this.dropSelf(POLISHED_GRANITE_CAULDRON.get());
+                this.dropSelf(DIORITE_CAULDRON.get());
+                this.dropSelf(POLISHED_DIORITE_CAULDRON.get());
+                this.dropSelf(ANDESITE_CAULDRON.get());
+                this.dropSelf(POLISHED_ANDESITE_CAULDRON.get());
             }
 
             @Override
@@ -209,7 +209,7 @@ public class CauldronGenerator {
 
             getVariantBuilder(block)
                     .forAllStates(state -> {
-                        int LEVEL = state.get(CauldronBlock.LEVEL).intValue();
+                        int LEVEL = state.getValue(CauldronBlock.LEVEL).intValue();
                         switch (LEVEL) {
                             default:
                                 return ConfiguredModel.builder().modelFile(cauldron).build();

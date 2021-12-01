@@ -13,26 +13,26 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 public class ClientHandler {
     public static void doClientStuff(final FMLClientSetupEvent event) {
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.ACACIA_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.DARK_OAK_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.BIRCH_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.JUNGLE_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.OAK_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.SPRUCE_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.GOLD_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.DIAMOND_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.COBBLE_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.BRICK_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.OBSIDIAN_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.STONE_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.GRANITE_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.POLISHED_GRANITE_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.DIORITE_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.POLISHED_DIORITE_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.ANDESITE_CAULDRON.get(), RenderType.getCutout());
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.POLISHED_ANDESITE_CAULDRON.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.ACACIA_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.DARK_OAK_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.BIRCH_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.JUNGLE_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.OAK_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.SPRUCE_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.GOLD_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.DIAMOND_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.COBBLE_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.BRICK_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.OBSIDIAN_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.STONE_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.GRANITE_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.POLISHED_GRANITE_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.DIORITE_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.POLISHED_DIORITE_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.ANDESITE_CAULDRON.get(), RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.POLISHED_ANDESITE_CAULDRON.get(), RenderType.cutout());
 
-        RenderTypeLookup.setRenderLayer(CauldronRegistry.GLASS_CAULDRON.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(CauldronRegistry.GLASS_CAULDRON.get(), RenderType.cutout());
     }
 
 
@@ -42,7 +42,7 @@ public class ClientHandler {
             Block block = blockObject.get();
             if(block instanceof CauldronBlock) {
                 colors.register((p_228060_0_, p_228060_1_, p_228060_2_, p_228060_3_) -> {
-                    return p_228060_1_ != null && p_228060_2_ != null ? BiomeColors.getWaterColor(p_228060_1_, p_228060_2_) : -1;
+                    return p_228060_1_ != null && p_228060_2_ != null ? BiomeColors.getAverageWaterColor(p_228060_1_, p_228060_2_) : -1;
                 }, block);
             }
         }
