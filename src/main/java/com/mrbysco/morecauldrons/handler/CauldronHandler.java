@@ -8,13 +8,13 @@ import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 public class CauldronHandler {
-    @SubscribeEvent
-    public void onBlockBreak(BlockEvent.BreakEvent event) {
-        BlockState state = event.getState();
-        if(state.getBlock() instanceof CauldronBlock && MoreCauldronsConfig.SERVER.liquidDropping.get()) { //&& !ModList.get().isLoaded("inspirations")) {
-            if(state.getValue(CauldronBlock.LEVEL) == 3) {
-                event.getWorld().setBlock(event.getPos(), Blocks.WATER.defaultBlockState(), 6);
-            }
-        }
-    }
+	@SubscribeEvent
+	public void onBlockBreak(BlockEvent.BreakEvent event) {
+		BlockState state = event.getState();
+		if (state.getBlock() instanceof CauldronBlock && MoreCauldronsConfig.SERVER.liquidDropping.get()) { //&& !ModList.get().isLoaded("inspirations")) {
+			if (state.getValue(CauldronBlock.LEVEL) == 3) {
+				event.getWorld().setBlock(event.getPos(), Blocks.WATER.defaultBlockState(), 6);
+			}
+		}
+	}
 }

@@ -33,7 +33,7 @@ public class MoreCauldrons {
 //			CauldronRegistry.registerInspirationsSupport();
 //			MinecraftForge.EVENT_BUS.register(new InspirationsHandler());
 //		} else {
-			CauldronRegistry.registerVanilla();
+		CauldronRegistry.registerVanilla();
 //		}
 
 		DistExecutor.runWhenOn(Dist.CLIENT, () -> () -> {

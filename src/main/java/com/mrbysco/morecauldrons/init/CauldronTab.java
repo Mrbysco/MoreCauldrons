@@ -6,7 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class CauldronTab{
+public class CauldronTab {
 
 	public static final ItemGroup CAULDRON_TAB = new ItemGroup(ModReference.MOD_ID + ".cauldron") {
 		@OnlyIn(Dist.CLIENT)

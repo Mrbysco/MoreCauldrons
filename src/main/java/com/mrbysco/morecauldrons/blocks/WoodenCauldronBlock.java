@@ -11,7 +11,7 @@ import net.minecraftforge.common.ToolType;
 @SuppressWarnings("deprecated")
 public class WoodenCauldronBlock extends BaseCauldronBlock {
 
-	public WoodenCauldronBlock(Block.Properties properties){
+	public WoodenCauldronBlock(Block.Properties properties) {
 		super(properties.sound(SoundType.WOOD).harvestTool(ToolType.AXE).strength(2.0F, 3.0F));
 	}
 
